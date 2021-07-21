@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style type="text/css">
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: white;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+</style>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.0/d3.min.js" integrity="sha512-tTLM3aTBhx9lm7r9myFJsBf0hR95wd/Nwcs11izdmcB6x2XE1ybMyn5v1s9wj+pwJuyOy528jnyCi6tTzJwOmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div id="my_dataviz"></div>
+<script>
+// set the dimensions and margins of the graph
+var margin = {top: 30, right: 100, bottom: 80, left: 60},
+    width = 985 - margin.left - margin.right,
+    height = 506 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("body")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+var div = d3.select("body").append("div") 
+  .attr("class", "tooltip")       
+  .style("opacity", 0);
+
+//Read the data
+d3.csv("./us-state-covid-vaccines-per-100.csv",
+
+  // Now I can use this dataset:
+  function(data) {
+    data = data.filter(function(d){ return d.Entity == "United States" });
+    var formatTime = d3.timeFormat("%B %d, %Y");
+    var parseDate = d3.utcParse("%Y-%m-%d");
+    data.forEach(function(d) {
+      d["Day"] = parseDate(d.Day);
+    });
+    // Add X axis --> it is a date format
+    var x = d3.scaleTime()
+      .domain(d3.extent(data, function(d) { return d.Day; }))
+      .range([ 0, width ]);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+    // Add Y axis
+    var y = d3.scaleLinear()
+      .domain([0, d3.max(data, function(d) { return +d.total_vaccinations_per_hundred; })])
+      .range([ height, 0 ]);
+    svg.append("g")
+      .call(d3.axisLeft(y).tickSize(-width).ticks(5))
+      .style("stroke-dasharray", "3 3")
+      .call(g => g.select(".domain").remove());
+
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .style("font-size", "15px")
+      .text("Total vaccinations per hundred");    
+
+    svg.append("text")             
+      .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + margin.top + 20) + ")")
+      .style("text-anchor", "middle")
+      .style("font-size", "15px")
+      .text("Date");    
+
+    // Add the line
+    svg.append("path")
+      .datum(data)
+      .attr("fill", "none")
+      .attr("stroke", "#3C4E66")
+      .attr("stroke-width", 1.5)
+      .attr("d", d3.line()
+        .x(function(d) { return x(d.Day)})
+        .y(function(d) { return y(d.total_vaccinations_per_hundred) })
+      );
+
+    svg.selectAll(".dot")
+      .data(data)
+      .enter()
+      .append("circle")
+      .attr("r", "2")
+      .attr("cx", d => x(d.Day))
+      .attr("cy", d => y(d.total_vaccinations_per_hundred))
+      .attr("fill", "#3C4E66")
+      .on("mouseover", function(d) {    
+        div.transition()    
+          .duration(200)    
+          .style("opacity", .9);    
+        div.html(formatTime(d.Day) + "<br/> United States "  + d.total_vaccinations_per_hundred)  
+          .style("left", (d3.event.pageX) + "px")   
+          .style("top", (d3.event.pageY - 28) + "px");  
+        })          
+      .on("mouseout", function(d) {   
+        div.transition()    
+          .duration(500)    
+          .style("opacity", 0); 
+      });
+
+    svg.append("text")
+      .attr("x", width-5)
+      .attr("y", 30)
+      .style("text-anchor", "middle")
+      .style("font-size", "15px")
+      .text("United States");
+})
+</script>
+</body>

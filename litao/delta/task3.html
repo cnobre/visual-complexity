@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style type="text/css">
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: white;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+</style>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.0/d3.min.js" integrity="sha512-tTLM3aTBhx9lm7r9myFJsBf0hR95wd/Nwcs11izdmcB6x2XE1ybMyn5v1s9wj+pwJuyOy528jnyCi6tTzJwOmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div id="my_dataviz"></div>
+<script>
+// set the dimensions and margins of the graph
+var margin = {top: 30, right: 150, bottom: 80, left: 60},
+    width = 1055 - margin.left - margin.right,
+    height = 506 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("body")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+var div = d3.select("body").append("div") 
+  .attr("class", "tooltip")       
+  .style("opacity", 0);
+
+//Read the data
+d3.csv("./covid-cases-delta.csv",
+
+  // Now I can use this dataset:
+  function(data) {
+    
+
+    tokeep = ["United States", "United Kingdom", "Australia", "India", "Spain", "Italy", "Germany", "Brazil"];
+    data = data.filter(function(d,i){ return tokeep.indexOf(d.Entity) >= 0 });
+
+    var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
+      .key(function(d) { return d.Entity;})
+      .entries(data);
+
+    var formatTime = d3.timeFormat("%B %d, %Y");
+    var parseDate = d3.utcParse("%Y-%m-%d");
+    data.forEach(function(d) {
+      d["Day"] = parseDate(d.Day);
+    });
+    // Add X axis --> it is a date format
+    var x = d3.scaleTime()
+      .domain(d3.extent(data, function(d) { return d.Day; }))
+      .range([ 0, width ]);
+    svg.append("g")
+      .attr("id", "x")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x))
+      .style("opacity", "0");
+
+    // Add Y axis
+    var y = d3.scaleLinear()
+      .domain([0, d3.max(data, function(d) { return +d.Delta; })])
+      .range([ height, 0 ]);
+    svg.append("g")
+      .attr("id", "y")
+      .call(d3.axisLeft(y).tickSize(-width).ticks(5))
+      .style("stroke-dasharray", "3 3")
+      .call(g => g.select(".domain").remove())
+      .style("opacity", "0");
+
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .style("font-size", "15px")
+      .text("delta variant/total infection (%)");    
+
+    svg.append("text")             
+      .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + margin.top + 20) + ")")
+      .style("text-anchor", "middle")
+      .style("font-size", "15px")
+      .text("Date");  
+
+    //change the animation duration time here.
+    var axis_show = 5000,
+      dot_show = 1000,
+      line_show = 5000;
+
+    d3.select("#x")
+      .transition()
+      .duration(axis_show)
+      .style("opacity", "1"); 
+
+    d3.select("#y")
+      .transition()
+      .delay(axis_show)
+      .duration(axis_show)
+      .style("opacity", "1"); 
+
+    var res = sumstat.map(function(d){ return d.key }) 
+    var color = d3.scaleOrdinal()
+      .domain(res)
+      .range(["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5"]);
+
+    // Add the line
+    svg.selectAll(".line")
+      .data(sumstat)
+      .enter()
+      .append("path")
+        .attr("fill", "none")
+        .attr("stroke", function(d){ return color(d.key) })
+        .attr("stroke-width", 1.5)
+        .attr("id", function(d) { return d.key.replace(" ", "_");})
+        .attr("d", function(d) {
+          return d3.line()
+            .x(function(d) { return x(d.Day)})
+            .y(function(d) { return y(d.Delta) })
+            (d.values)
+        })
+        .attr("stroke-dasharray", function(d) {
+          var totalLength = d3.select("#"+d.key.replace(" ", "_")).node().getTotalLength();
+          return totalLength + " " + totalLength;
+        } ) 
+        .attr("stroke-dashoffset", function(d) {
+          return d3.select("#"+d.key.replace(" ", "_")).node().getTotalLength();
+        } ) 
+        .transition()
+        .delay(function(d, i) {
+          return i*(dot_show+line_show)+2*axis_show;
+        })
+        .duration(line_show)
+        .ease(d3.easeLinear)
+        .attr("stroke-dashoffset", 0);
+
+    svg.selectAll("dots")
+    .data(sumstat)
+    .enter()
+    .append("g")
+      .selectAll("circle")
+      .data(function(d) { return d.values; })
+      .enter()
+      .append("circle")
+        .attr("class", function(d) {return d.Entity.replace(" ", "_");})
+        .attr("fill", d => color(d.Entity))
+        .attr("r", 3)
+        .attr("cx", function(d) { return x(d.Day)})
+        .attr("cy", function(d) { return y(d.Delta) })
+        .style("opacity", "0");
+        
+
+    var legend = svg.selectAll(".entity")
+      .data(sumstat)
+      .enter()
+      .append("g")
+        .attr("class", "legend")
+        .attr("id", d => "l"+d.key.replace(" ", "_"))
+        .attr("transform", "translate(50,0)")
+        .style("opacity", "0");
+
+    var legend_y = d3.scaleOrdinal()
+      .domain(res)
+      .range([400, 350, 300, 250, 200, 150, 100, 50 ]);
+
+    legend.append('circle')
+      .attr('cx', width-25)
+      .attr('cy', function(d) {
+        return legend_y(d.key);
+      })
+      .attr("r", 7)
+      .style("fill", function(d) {return color(d.key); });
+
+    legend.append('text')
+      .attr('x', width-5)
+      .attr('y', function(d) {
+        return legend_y(d.key)+3;
+      })
+      .style("font-size", "15px")
+      .text(function(d) {return d.key; });
+
+    sumstat.forEach(function(e, i) {
+      d3.selectAll("."+e.key.replace(" ", "_"))
+        .transition()
+        .delay(function() {
+          return i*(dot_show+line_show)+2*axis_show;
+        })
+        .duration(dot_show)
+        .style("opacity", "1");
+
+      d3.selectAll("#l"+e.key.replace(" ", "_"))
+        .transition()
+        .delay(function() {
+          return i*(dot_show+line_show)+2*axis_show;
+        })
+        .duration(dot_show)
+        .style("opacity", "1");
+    })
+      
+})
+</script>
+</body>
