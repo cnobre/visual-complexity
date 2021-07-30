@@ -70,7 +70,7 @@ d3.csv("./covid-cases-delta.csv",
 
     // Add Y axis
     var y = d3.scaleLinear()
-        .domain([0, d3.max(data, function(d) { return +d.Delta; })])
+        .domain([0, 100])
         .range([ height, 0 ]);
     svg.append("g")
         .attr("id", "y")
@@ -97,19 +97,21 @@ d3.csv("./covid-cases-delta.csv",
         .style("font-size", "15px")
         .style("font-family", "Arial")
         .text("Date"); 
-        
+
+
     svg.append("text")             
         .attr("transform",
-              "translate(" + (width/2) + " ,0)")
+              "translate(" + (width/2) + " ,-10)")
         .style("text-anchor", "middle")
         .style("font-size", "25px")
         .style("font-family", "Arial")
-        .text("Delta Variant is Causing a Surge in COVID Cases Globally"); 
+        .text("The Portion of Delta Variant in COVID Cases Globally"); 
 
     //change the animation duration time here.
-    var axis_show = 5000,
+    var axis_show = 2000,
         dot_show = 1000,
-        line_show = 5000,
+        line_show = 1000,
+        bar_show = 1000,
         annotation_show = 5000,
         sp_delay = 5000;
 
@@ -120,7 +122,7 @@ d3.csv("./covid-cases-delta.csv",
 
     d3.select("#y")
         .transition()
-        .delay(axis_show+dot_show+line_show)
+        .delay(axis_show)
         .duration(axis_show)
         .style("opacity", "1"); 
 
@@ -152,12 +154,50 @@ d3.csv("./covid-cases-delta.csv",
               return d3.select("#"+d.key.replace(" ", "_")).node().getTotalLength();
             } ) 
             .transition()
-            .delay(axis_show)
+            .delay(2*axis_show)
             .duration(line_show)
             .ease(d3.easeLinear)
             .attr("stroke-dashoffset", 0);
 
     var annot_data = {'Day': parseDate("2021-05-03"), 'Delta': "43.1"};
+
+    var bar_w = 20;
+
+    var bar_1 = svg.append("rect")
+        .attr("x", x(annot_data.Day)-bar_w/2)
+        .attr('y', y(100))
+        .attr('width', bar_w)
+        .attr('height', height - y(100))
+        .attr('fill', 'steelblue')
+        .style("opacity", 0)
+        .transition()
+        .delay(2*axis_show+line_show)
+        .duration(bar_show)
+        .style("opacity", "1");
+
+    var bar_2 = svg.append("rect")
+        .attr("x", x(annot_data.Day)-bar_w/2)
+        .attr('y', y(annot_data.Delta))
+        .attr('width', bar_w)
+        .attr('height', height - y(annot_data.Delta))
+        .attr('fill', color('Australia'))
+        .style("opacity", 0)
+        .transition()
+        .delay(2*axis_show+line_show+bar_show)
+        .duration(bar_show)
+        .style("opacity", "1");
+
+    bar_1.transition()
+        .delay(sp_delay)
+        .duration(sp_delay/4)
+        .style("opacity", "0");
+
+    bar_2.transition()
+        .delay(sp_delay)
+        .duration(sp_delay/4)
+        .style("opacity", "0");
+
+
     var hz_line = svg.append("g")
         .append("line")
         .attr("class", "hz")
@@ -169,14 +209,32 @@ d3.csv("./covid-cases-delta.csv",
         .attr("stroke-width", "2px")
         .style("opacity", "0")
         .transition()
-        .delay(axis_show+dot_show)
+        .delay(2*axis_show+line_show+2*bar_show)
         .duration(sp_delay/4)
         .style("opacity", "1");
 
     hz_line.transition()
-        .delay(axis_show+line_show+sp_delay/2)
+        .delay(sp_delay)
         .duration(sp_delay/4)
         .style("opacity", "0");
+
+    var example_text = svg.append("text")
+        .attr("y", y(43.1)+5)
+        .attr("x",0)
+        .style("text-anchor", "middle")
+        .style("font-size", "20px")
+        .style("font-family", "Arial")
+        .text("43.1")
+        .style("fill", "#fff")
+        .transition()
+        .delay(2*axis_show+line_show+2*bar_show)
+        .duration(sp_delay/4)
+        .style("fill", "#000");
+
+    example_text.transition()
+        .delay(sp_delay)
+        .duration(sp_delay/4)
+        .style("fill", "#fff");
 
     var anno = d3.select("body")
         .append("div")
@@ -186,7 +244,7 @@ d3.csv("./covid-cases-delta.csv",
         .style("width", "200px")
         .style("height", "100px")
         .style("top", '130px')
-        .style("left", '680px')
+        .style("left", '500px')
         .style("color", "white")
         .style("padding", "10px 10px")
         .style("border-radius", "10px")
@@ -194,7 +252,7 @@ d3.csv("./covid-cases-delta.csv",
         .style("background", "steelblue")
         .style("opacity", "0")
         .transition()
-            .delay(axis_show+dot_show)
+            .delay(2*axis_show+line_show+2*bar_show)
             .duration(sp_delay/4)
             .style("opacity", "1");
 
@@ -202,7 +260,7 @@ d3.csv("./covid-cases-delta.csv",
       annotation.innerHTML = "This point means that on May 3, 2021, Australia’s Delta variant accounted for <b style='font-size: 20px; color: orange;'>43.1%</b> of all COVID-19 infections in this country.";
 
       anno.transition()
-          .delay(axis_show+line_show+sp_delay/2)
+          .delay(sp_delay)
           .duration(sp_delay/4)
           .style("opacity", "0");
     
@@ -229,9 +287,7 @@ d3.csv("./covid-cases-delta.csv",
             return d3.select("#"+d.key.replace(" ", "_")).node().getTotalLength();
         } ) 
         .transition()
-        .delay(function(d, i) {
-            return (i+1)*(dot_show+line_show)+2*axis_show+sp_delay;
-        })
+        .delay(2*axis_show+line_show+2*bar_show+5*sp_delay/4+dot_show)
         .duration(line_show)
         .ease(d3.easeLinear)
         .attr("stroke-dashoffset", 0);
@@ -283,7 +339,7 @@ d3.csv("./covid-cases-delta.csv",
         .text(function(d) {return d.key; });
 
     special_data.forEach(function(e, i) {
-        var delay_t = axis_show;
+        var delay_t = 2*axis_show;
         d3.selectAll("."+e.key.replace(" ", "_"))
             .transition()
             .delay(delay_t)
@@ -298,7 +354,7 @@ d3.csv("./covid-cases-delta.csv",
     })
 
     other_data.forEach(function(e, i) {
-        var delay_t = (i+1)*(dot_show+line_show)+sp_delay+2*axis_show;
+        var delay_t = 2*axis_show+line_show+2*bar_show+5*sp_delay/4;
         d3.selectAll("."+e.key.replace(" ", "_"))
             .transition()
             .delay(delay_t)
