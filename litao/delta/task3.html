@@ -167,25 +167,23 @@ d3.csv("./covid-cases-delta.csv",
         .attr("x", x(annot_data.Day)-bar_w/2)
         .attr('y', y(100))
         .attr('width', bar_w)
-        .attr('height', height - y(100))
+        .attr('height', 0)
         .attr('fill', 'steelblue')
-        .style("opacity", 0)
         .transition()
         .delay(2*axis_show+line_show)
         .duration(bar_show)
-        .style("opacity", "1");
+        .style("height", height - y(100));
 
     var bar_2 = svg.append("rect")
         .attr("x", x(annot_data.Day)-bar_w/2)
         .attr('y', y(annot_data.Delta))
         .attr('width', bar_w)
-        .attr('height', height - y(annot_data.Delta))
+        .attr('height', 0)
         .attr('fill', color('Australia'))
-        .style("opacity", 0)
         .transition()
         .delay(2*axis_show+line_show+bar_show)
         .duration(bar_show)
-        .style("opacity", "1");
+        .style('height', height - y(annot_data.Delta));
 
     bar_1.transition()
         .delay(sp_delay)
