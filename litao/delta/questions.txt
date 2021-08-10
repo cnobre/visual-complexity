@@ -1,0 +1,7 @@
+Q1. On May 1st, which country had the highest proportion of delta variants to all COVID-19 infections?
+
+Q2. In which countries have a decline in the proportion of delta variants to all COVID-19 infections?
+
+Q3. Near May 1st, which countries have the fastest rate of growth in the proportion of delta variants?
+
+Q4. Among the countries shown in the figure, which is the earliest and latest country where the delta variant appears?
