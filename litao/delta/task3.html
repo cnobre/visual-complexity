@@ -112,8 +112,8 @@ d3.csv("./covid-cases-delta.csv",
         dot_show = 1000,
         line_show = 1000,
         bar_show = 1000,
-        annotation_show = 5000,
-        sp_delay = 5000;
+        annotation_show = 10000,
+        sp_delay = 10000;
 
     d3.select("#x")
         .transition()
@@ -129,7 +129,7 @@ d3.csv("./covid-cases-delta.csv",
     var res = sumstat.map(function(d){ return d.key }) 
     var color = d3.scaleOrdinal()
         .domain(res)
-        .range(["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5"]);
+        .range(["#8dd3c7","#89C562","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5"]);
 
     // Add the lines of special countries
     svg.selectAll(".line")
@@ -216,23 +216,100 @@ d3.csv("./covid-cases-delta.csv",
         .duration(sp_delay/4)
         .style("opacity", "0");
 
-    var example_text = svg.append("text")
-        .attr("y", y(43.1)+5)
+    var highest_line = svg.append("g")
+        .append("line")
+        .attr("class", "hz")
+        .attr("x1", 0)
+        .attr("x2", x(annot_data.Day))
+        .attr("y1", 0)
+        .attr("y2", 0)
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", "2px")
+        .style("opacity", "0")
+        .transition()
+        .delay(2*axis_show+line_show+2*bar_show)
+        .duration(sp_delay/4)
+        .style("opacity", "1");
+
+    highest_line.transition()
+        .delay(sp_delay)
+        .duration(sp_delay/4)
+        .style("opacity", "0");
+
+    var vt_line = svg.append("g")
+        .append("line")
+        .attr("class", "hz")
+        .attr("x1", x(annot_data.Day))
+        .attr("x2", x(annot_data.Day))
+        .attr("y1", height)
+        .attr("y2", y(annot_data.Delta))
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", "2px")
+        .style("opacity", "0")
+        .transition()
+        .delay(2*axis_show+line_show+2*bar_show)
+        .duration(sp_delay/4)
+        .style("opacity", "1");
+
+    vt_line.transition()
+        .delay(sp_delay)
+        .duration(sp_delay/4)
+        .style("opacity", "0");
+
+    var hz_text = svg.append("text")
+        .attr("y", y(43.1)-15)
         .attr("x",0)
-        .style("text-anchor", "middle")
+        .style("text-anchor", "start")
         .style("font-size", "20px")
         .style("font-family", "Arial")
-        .text("43.1")
+        .text("43.1% of all COVID-19 infections are Delta variants")
         .style("fill", "#fff")
         .transition()
         .delay(2*axis_show+line_show+2*bar_show)
         .duration(sp_delay/4)
-        .style("fill", "#000");
+        .style("fill", "orange");
 
-    example_text.transition()
+    hz_text.transition()
         .delay(sp_delay)
         .duration(sp_delay/4)
         .style("fill", "#fff");
+
+    var highest_text = svg.append("text")
+        .attr("y", 15)
+        .attr("x",0)
+        .style("text-anchor", "start")
+        .style("font-size", "20px")
+        .style("font-family", "Arial")
+        .text("100% represents the all COVID-19 infections")
+        .style("fill", "#fff")
+        .transition()
+        .delay(2*axis_show+line_show+2*bar_show)
+        .duration(sp_delay/4)
+        .style("fill", "orange");
+
+    highest_text.transition()
+        .delay(sp_delay)
+        .duration(sp_delay/4)
+        .style("fill", "#fff");
+
+    var vt_text = svg.append("text")
+        .attr("y", height)
+        .attr("x", x(parseDate("2021-05-03"))+15)
+        .style("text-anchor", "start")
+        .style("font-size", "20px")
+        .style("font-family", "Arial")
+        .text("May 3, 2021")
+        .style("fill", "orange")
+        .style("opacity", "0")
+        .transition()
+        .delay(2*axis_show+line_show+2*bar_show)
+        .duration(sp_delay/4)
+        .style("opacity", "1");
+
+    vt_text.transition()
+        .delay(sp_delay)
+        .duration(sp_delay/4)
+        .style("opacity", "0");
 
     var anno = d3.select("body")
         .append("div")
@@ -255,7 +332,7 @@ d3.csv("./covid-cases-delta.csv",
             .style("opacity", "1");
 
       var annotation = document.getElementById("annot");
-      annotation.innerHTML = "This point means that on May 3, 2021, Australia’s Delta variant accounted for <b style='font-size: 20px; color: orange;'>43.1%</b> of all COVID-19 infections in this country.";
+      annotation.innerHTML = "This point means that on <b style='font-size: 20px; color: orange;'>May 3, 2021</b>, Australia’s Delta variant accounted for <b style='font-size: 20px; color: orange;'>43.1%</b> of all COVID-19 infections in this country.";
 
       anno.transition()
           .delay(sp_delay)
