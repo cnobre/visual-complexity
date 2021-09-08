@@ -1,0 +1,232 @@
+{
+  "combinations": [
+    {
+      "combinationId": "a",
+      "setMembership": ["Fatigue", "Anosmia"],
+      "labels": ["combination of symptoms: 16.2%"],
+      "test": [16.2]
+    },
+    {
+      "combinationId": "b",
+      "setMembership": ["Fatigue", "Anosmia", "Cough"],
+      "labels": ["combination of symptoms: 14.9%"],
+      "test": 14.9
+    },
+    {
+      "combinationId": "c",
+      "setMembership": ["Fatigue"],
+      "labels": ["combination of symptoms: 11.4%"],
+      "test": 11.4
+    },
+    {
+      "combinationId": "d",
+      "setMembership": ["Fatigue", "Cough"],
+      "labels": ["combination of symptoms: 10.3%"],
+      "test": 10.3
+    },
+    {
+      "combinationId": "e",
+      "setMembership": ["Anosmia"],
+      "labels": ["combination of symptoms: 8.1%"],
+      "test": 8.1
+    },
+    {
+      "combinationId": "f",
+      "setMembership":  ["Fatigue", "Anosmia", "Cough", "Fever"],
+      "labels": ["combination of symptoms: 4.0%"],
+      "test": 4.0
+    },
+    {
+      "combinationId": "g",
+      "setMembership": ["Fatigue", "Anosmia", "Diarrhea"],
+      "labels": ["combination of symptoms: 3.7%"],
+      "test": 3.7
+    },
+    {
+      "combinationId": "h",
+      "setMembership":  ["Cough"],
+      "labels": ["combination of symptoms: 3.3%"],
+      "test": 3.3
+    },
+    {
+      "combinationId": "i",
+      "setMembership": ["Fatigue", "Cough", "Fever"],
+      "labels": ["combination of symptoms: 3.1%"],
+      "test": 3.1
+    },
+    {
+      "combinationId": "j",
+      "setMembership": ["Anosmia","Fatigue", "Cough","Fever","Diarrhea"],
+      "labels": ["combination of symptoms: 2.9%"],
+      "test": 2.9
+    },
+    {
+      "combinationId": "k",
+      "setMembership": ["Fatigue", "Anosmia", "Fever"],
+      "labels": ["combination of symptoms: 2.7%"],
+      "test": 2.7
+    },
+    {
+      "combinationId": "l",
+      "setMembership": ["Fatigue", "Fever"],
+      "labels": ["combination of symptoms: 2.5%"],
+      "test": 2.5
+    },
+    {
+      "combinationId": "m",
+      "setMembership": ["Anosmia","Fatigue", "Cough", "Diarrhea"],
+      "labels": ["combination of symptoms: 2.4%"],
+      "test": 2.4
+    },
+    {
+      "combinationId": "n",
+      "setMembership": ["Fatigue", "Cough", "Diarrhea"],
+      "labels": ["combination of symptoms: 1.8%"],
+      "test": 1.8
+    },
+    {
+      "combinationId": "o",
+      "setMembership": ["Fatigue", "Fever"],
+      "labels": ["combination of symptoms: 1.6%"],
+      "test": 1.6
+    },
+    {
+      "combinationId": "p",
+      "setMembership": ["Fatigue", "Anosmia", "Cough", "Shortness of Breath"],
+      "labels": ["combination of symptoms: 1.5%"],
+      "test": 1.5
+    },
+    {
+      "combinationId": "q",
+      "setMembership": ["Anosmia","Fatigue", "Cough","Fever", "Diarrhea", "Shortness of Breath"],
+      "labels": ["combination of symptoms: 1.3%"],
+      "test": 1.3
+    },
+    {
+      "combinationId": "r",
+      "setMembership": ["Fatigue", "Cough","Shortness of Breath"],
+      "labels": ["combination of symptoms: 1.3%"],
+      "test": 1.3
+    },
+    {
+      "combinationId": "s",
+      "setMembership": ["Anosmia","Fatigue", "Cough","Diarrhea", "Shortness of Breath"],
+      "labels": ["combination of symptoms: 1%"],
+      "test": 1.0
+    },
+    {
+      "combinationId": "t",
+      "setMembership": ["Fatigue", "Cough","Fever","Diarrhea"],
+      "labels": ["combination of symptoms: 1%"],
+      "test": 1.0
+    },
+    {
+      "combinationId": "u",
+      "setMembership": ["Fatigue", "Anosmia", "Fever","Diarrhea"],
+      "labels": ["combination of symptoms: 1%"],
+      "test": 1.0
+    },
+    {
+      "combinationId": "w",
+      "setMembership": ["Anosmia","Fatigue","Cough","Fever","Shortness of Breath"],
+      "labels": ["combination of symptoms: 1%"],
+      "test": 1.0
+    },
+    {
+      "combinationId": "v",
+      "setMembership": ["Diarrhea"],
+      "labels": ["combination of symptoms: 0.7%"],
+      "test": 0.7
+    },
+    {
+      "combinationId": "x",
+      "setMembership": ["Fatigue","Diarrhea","Fever"],
+      "labels": ["combination of symptoms: 0.7%"],
+      "test": 0.7
+    },
+    {
+      "combinationId": "y",
+      "setMembership": ["Fever"],
+      "labels": ["combination of symptoms: 0.6%"],
+      "test": 0.6
+    },
+    {
+      "combinationId": "z",
+      "setMembership": ["Fatigue", "Cough", "Fever", "Shortness of Breath"],
+      "labels": ["combination of symptoms: 0.6%"],
+      "test": 0.6
+    },
+    {
+      "combinationId": "a1",
+      "setMembership": ["Fatigue","Shortness of Breath"],
+      "labels": ["combination of symptoms: 0.6%"],
+      "test": 0.6
+    },
+    {
+      "combinationId": "b1",
+      "setMembership": ["Fatigue", "Cough","Fever","Diarrhea","Shortness of Breath"],
+      "labels": ["combination of symptoms: 0.5%"],
+      "test": 0.5
+    },
+    {
+      "combinationId": "c1",
+      "setMembership": ["Cough","Diarrhea"],
+      "labels": ["combination of symptoms: 0.4%"],
+      "test": 0.4
+    },
+    {
+      "combinationId": "d1",
+      "setMembership": ["Fatigue","Cough","Diarrhea","Shortness of Breath"],
+      "labels": ["combination of symptoms: 0.4%"],
+      "test": 0.4
+    },
+
+    {
+      "combinationId": "e1",
+      "setMembership": ["Shortness of Breath"],
+      "labels": ["combination of symptoms: 0.3%"],
+      "test": 0.3
+    },
+    {
+      "combinationId": "f1",
+      "setMembership": ["Cough","Shortness of Breath"],
+      "labels": ["combination of symptoms: 0.1%"],
+      "test": 0.1
+    }
+
+  ],
+
+
+  "sets": [
+    {
+      "setId": "Fatigue",
+      "size": 0.88,
+      "label": ["one of the symptoms: 88%"]
+    },
+    {
+      "setId": "Anosmia",
+      "size": 0.62,
+      "label": ["one of the symptoms: 62%"]
+    },
+    {
+      "setId": "Cough",
+      "size": 0.51,
+      "label": ["one of the symptoms: 51%"]
+    },
+    {
+      "setId": "Diarrhea",
+      "size": 0.19,
+      "label": ["one of the symptoms: 19%"]
+    },
+    {
+      "setId": "Fever",
+      "size": 0.20,
+      "label": ["one of the symptoms: 20%"]
+    },
+    {
+      "setId": "Shortness of Breath",
+      "size": 0.08,
+      "label": ["one of the symptoms: 8%"]
+    }
+  ]
+}
