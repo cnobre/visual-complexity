@@ -2,6 +2,7 @@
 d3.json('data/dataset.json')
     .then(data => {
         UpSetPlot(data);
+        animate();
     });
 
 
@@ -92,7 +93,7 @@ function UpSetPlot(data) {
         .attr('r', (d) => yScale.bandwidth()/2);
 
 
-    MainChart.selectAll('rect')
+    MainChart.selectAll('.bar')
         .data(data.sets)
         .join('rect')
         .attr('class', 'bar')
@@ -129,7 +130,7 @@ function UpSetPlot(data) {
         .text((d) => d.setId);
 
 
-    IntersectionChart.selectAll('rect')
+    IntersectionChart.selectAll('.bar')
         .data(data.combinations)
         .join('rect')
         .attr('class', 'bar')
@@ -184,4 +185,8 @@ function UpSetPlot(data) {
         .style("font-family",'Arial')
         .text("The infographic shows the frequency of each symptom and combination of symptoms.");
 
+}
+
+function animate(){
+    gsap.from(".bar", {opacity:0, rotation: 360, x: 100, duration: 2});
 }
