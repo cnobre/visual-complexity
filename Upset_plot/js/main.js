@@ -2,7 +2,8 @@
 d3.json('data/dataset.json')
     .then(data => {
         UpSetPlot(data);
-        animate();
+        // startTour();
+        // animate();
     });
 
 
@@ -32,25 +33,35 @@ function UpSetPlot(data) {
     const width = containerWidth - margin.left - margin.right;
     const height = containerHeight - margin.top - margin.left;
 
+    padding = 20;
     const leftColWidth = 250;
-    const setIdWidth = 120;
-    const MainChartWidth = leftColWidth - setIdWidth;
-    const rightColWidth = width - leftColWidth -120;
+    const mainChartWidth = 600;
+    const rightColWidth = width - leftColWidth - mainChartWidth ;
+
+    console.log('leftColWidth',leftColWidth)
+    console.log('MainChartWidth',mainChartWidth)
+    console.log('rightColWidth',rightColWidth)
 
     const topRowHeight = 130;
     const bottomRowHeight = height - topRowHeight - innerMargin;
 
+    
 
     const IntersectionChartScale = d3.scaleLinear()
         .range([topRowHeight, 0])
-        .domain([0, d3.max(data.combinations, (d) => d.test)]);
+        .domain([0, d3.max(data.combinations, (d) => d.value)]);
 
-    const MainChartScale = d3.scaleLinear()
-        .range([MainChartWidth, 0])
+    // const MainChartScale = d3.scaleLinear()
+    //     .range([mainChartWidth-padding, padding])
+    //     .domain([0, d3.max(data.sets, (d) => d.size)]);
+
+    const rightColScale = d3.scaleLinear()
+        .range([rightColWidth-padding, padding*2])
         .domain([0, d3.max(data.sets, (d) => d.size)]);
 
+
     const xScale = d3.scaleBand()
-        .range([0, rightColWidth])
+        .range([padding, mainChartWidth-padding])
         .domain(data.combinations.map((d) => d.combinationId))
         .paddingInner(0.2);
 
@@ -66,14 +77,25 @@ function UpSetPlot(data) {
         .append('g')
         .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
-    const MainChart = svg.append('g')
-        .attr('class', 'intersection-size')
-        .attr('transform', `translate(0, ${topRowHeight + innerMargin})`);
+     //pre-compute bar heights and positions for animation purposes; 
 
-    const IntersectionChart = svg.append('g')
-        .attr('class', 'intersection-size')
+   //labels     
+    const labels = svg.append('g')
+    .attr('class', 'labels')
+    .attr('transform', `translate(0, ${topRowHeight + innerMargin})`);
+
+
+    //horizontal bars    
+    const hbars = svg.append('g')
+        .attr('class', 'horizontal-bars')
+        .attr('transform', `translate(${leftColWidth+mainChartWidth}, ${topRowHeight + innerMargin})`);
+
+    //vertical bars    
+    const vbars = svg.append('g')
+        .attr('class', 'vertical-bars')
         .attr('transform', `translate(${leftColWidth}, 0)`);
 
+    //circles    
     const combinationMatrix = svg.append('g')
         .attr('transform', `translate(${leftColWidth}, ${topRowHeight + innerMargin})`);
 
@@ -82,7 +104,8 @@ function UpSetPlot(data) {
         .data(data.combinations)
         .join('g')
         .attr('class', 'combination')
-        .attr('transform', (d) => `translate(${xScale(d.combinationId) + xScale.bandwidth()/2.5}, 0)`);
+        .attr('id', d=>d.combinationId)
+        .attr('transform', (d) => `translate(${xScale(d.combinationId) + xScale.bandwidth()/2.5}, 0)`)
 
 
     const circle = combinationGroup.selectAll('circle')
@@ -90,16 +113,16 @@ function UpSetPlot(data) {
         .join('circle')
         .classed('member', (d) => d.member)
         .attr('cy', (d) => yScale(d.setId) + yScale.bandwidth()/2.5)
-        .attr('r', (d) => yScale.bandwidth()/2);
-
-
-    MainChart.selectAll('.bar')
+        .attr('r', yScale.bandwidth()/2)
+    
+    hbars.selectAll('.bar')
         .data(data.sets)
         .join('rect')
         .attr('class', 'bar')
-        .attr('width', (d) => MainChartWidth - MainChartScale(d.size))
+        .attr('id',d=>d.setId + 'Bar')
+        .attr('width', (d) => rightColWidth - rightColScale(d.size))
         .attr('height', yScale.bandwidth())
-        .attr('x', 900)
+        .attr('x', 0)
         .attr('y', (d) => yScale(d.setId))
         .on('mouseover', (event,d) => {
             d3.select('#tooltip')
@@ -115,29 +138,43 @@ function UpSetPlot(data) {
             d3.select('#tooltip').style('opacity', 0);
         });
 
+        hbars.selectAll('.bar-label')
+        .data(data.sets)
+        .join('text')
+        .attr('class', 'bar-label')
+        .attr('id',d=>d.setId + 'Label')
+        .style("font-family",'Arial')
+        .attr("fill", "#b3b1b1")
+        .attr('y', (d) => yScale(d.setId) + yScale.bandwidth()/2.5)
+        .attr('x',(d) => rightColWidth - rightColScale(d.size)+ 5)
+        // .attr('y', (d) => yScale(d.setId) + yScale.bandwidth()/2.5)
+        .attr('dy', '0.35em')
+        .text((d) => d.size*100 + "%");
 
-    MainChart.selectAll('.set-name')
+
+    labels.selectAll('.set-name')
         .data(data.sets)
         .join('text')
         .attr('class', 'set-name')
+        .attr('id',d=>d.setId + 'Label')
         .attr('text-anchor', 'end')
         .attr('font-size', "14px")
         .style("font-family",'Arial')
-        .attr("fill", "#b3b1b1")
-        .attr('x', 230)
+        .attr('x', leftColWidth)
         .attr('y', (d) => yScale(d.setId) + yScale.bandwidth()/2.5)
         .attr('dy', '0.35em')
         .text((d) => d.setId);
 
 
-    IntersectionChart.selectAll('.bar')
+    vbars.selectAll('.bar')
         .data(data.combinations)
         .join('rect')
         .attr('class', 'bar')
-        .attr('height', (d) => topRowHeight - IntersectionChartScale(d.test))
+        .attr('id',d=>d.setMembership.reduce((acc,cValue)=>cValue + acc,'') + 'Bar')
+        .attr('height', (d) => topRowHeight - IntersectionChartScale(d.value))
         .attr('width', xScale.bandwidth())
         .attr('x', (d) => xScale(d.combinationId))
-        .attr('y', (d) => IntersectionChartScale(d.test))
+        .attr('y', (d) => IntersectionChartScale(d.value))
         .on('mouseover', (event,d) => {
             d3.select('#tooltip')
                 .style('opacity', 1)
@@ -150,7 +187,20 @@ function UpSetPlot(data) {
         })
         .on('mouseout', () => {
             d3.select('#tooltip').style('opacity', 0);
-        });
+        })
+        .on('click',function (event,d){
+            collapseCircles(this)
+        })
+
+
+        // vbars.selectAll('.bar-label')
+        // .data(data.combinations)
+        // .join('text')
+        // .attr('class', 'bar-label')
+        // .attr('transform',d=>`translate(${xScale(d.combinationId)}, ${IntersectionChartScale(d.value)})rotate(-90)`)
+        // .attr('dy', xScale.bandwidth())
+        // .text((d) => d.value + "%");
+
 
     svg.append("text")
         .attr("x", 250)
@@ -187,6 +237,30 @@ function UpSetPlot(data) {
 
 }
 
-function animate(){
-    gsap.from(".bar", {opacity:0, rotation: 360, x: 100, duration: 2});
+function startTour(){
+
+    steps.map(step=>{
+        tour.addStep(step);
+    })
+tour.start();
+
+}
+
+function collapseCircles(element){
+
+    //isolate data bound to this rect
+    let data = d3.select(element).data()[0];
+    //use the data.combinationId to select the appropriate circle group
+    let group = d3.select('g #'+data.combinationId)
+
+    //scope the animation selector to the group
+    let g = gsap.utils.selector(group.node());
+
+    //select all circles that are inside this group. 
+    let circles = g("circle"); 
+
+    let tl = gsap.timeline(); //create the timeline
+    tl.to(circles, {opacity:1, cy: -20, duration: 1})
+    .to(circles, {opacity:1, cy: 10, duration: 1});
+
 }

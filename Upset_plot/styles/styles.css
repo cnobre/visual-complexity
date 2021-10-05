@@ -7,6 +7,12 @@ body {
 .bar {
     fill: #e0e0e0;
 }
+
+.bar-label{
+    fill:#295E9B;
+    font-size: 13px;
+    font-weight: bold;
+}
 .intersection-size .bar:hover {
     fill: #295E9B;
     transition: fill 250ms ease-in-out;
