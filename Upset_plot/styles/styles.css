@@ -8,6 +8,13 @@ body {
     fill: #e0e0e0;
 }
 
+.shepherd-modal-overlay-container.shepherd-modal-is-visible{
+    opacity:.2
+}
+
+.tourGroup{
+    margin:20px;
+}
 .bar-label{
     fill:#295E9B;
     font-size: 13px;
