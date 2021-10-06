@@ -5,12 +5,14 @@ let padding = 70;
 
 let formatPercent = d3.format(".0%");
 
+
 d3.csv("data/dataset2.csv", (row,i) => {
     row.vaccination_rate = +row.vaccination_rate;
     row.initial_value = +row.initial_value;
     row.subsequent_value = +row.subsequent_value;
+    // row.initial_value = d3.randomInt(0, 25)(); //random data generator
+    // row.subsequent_value = d3.randomInt(0, 25)(); //random data generator
     return row;
-
 
     // console.log(row)
 })
@@ -28,11 +30,11 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .range([padding, width-padding]);
 
 
+
         let changeScale = d3.scaleLinear()
             // .domain([d3.min(data, d => d.initial_value), d3.max(data, d => d.subsequent_value)])
             .domain([d3.min(data, d => 0), d3.max(data, d => 25)])
             .range([height-padding, padding]);
-
 
         let tip = d3.tip()
             .attr("class", "d3-tip")
@@ -57,7 +59,6 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("marker-end", d => "url(#end-" + d.colour + ")")
             .on("mouseover", function(e, d) { tip.show(d, this); })
             .on("mouseout", tip.hide);
-
 
 
         let defs = svg.append("svg:defs");
@@ -127,39 +128,6 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("font-size", "12")
             .text("No. of hospitalized per  100,000 people");
 
-            // .text(chartType.niceText());
-
-        // gridlines in x axis function
-        function make_x_gridlines() {
-            return d3.axisBottom(vaccinationScale)
-                .ticks(10)
-        }
-
-        // gridlines in y axis function
-        function make_y_gridlines() {
-            return d3.axisLeft(changeScale)
-                .ticks(10)
-        }
-
-        // add the X gridlines
-        svg.append("g")
-            .attr("class", "grid")
-            .attr("transform", "translate(0," + (height - padding) + ")")
-            .style("stroke-dasharray", "3 3")
-            .call(make_x_gridlines()
-                .tickSize(-height+padding+padding)
-                .tickFormat("")
-            )
-
-        // add the Y gridlines
-        svg.append("g")
-            .attr("class", "grid")
-            .attr("transform", "translate(" + padding + ",0)")
-            .style("stroke-dasharray", "3 3")
-            .call(make_y_gridlines()
-                .tickSize(-width+padding+padding)
-                .tickFormat("")
-            )
 
 
 
@@ -176,7 +144,38 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .call(yAxis);
 
 
+        function make_x_gridlines() {
+            return d3.axisBottom(vaccinationScale)
+                .ticks(10)
+        }
 
+
+        function make_y_gridlines() {
+            return d3.axisLeft(changeScale)
+                .ticks(10)
+        }
+
+
+
+
+        svg.append("g")
+            .attr("class", "grid")
+            .attr("transform", "translate(0," + (height - padding) + ")")
+            .style("stroke-dasharray", "3 3")
+            .call(make_x_gridlines()
+                .tickSize(-height+padding+padding)
+                .tickFormat("")
+            )
+
+
+        svg.append("g")
+            .attr("class", "grid")
+            .attr("transform", "translate(" + padding + ",0)")
+            .style("stroke-dasharray", "3 3")
+            .call(make_y_gridlines()
+                .tickSize(-width+padding+padding)
+                .tickFormat("")
+            )
 
 
     });
