@@ -8,6 +8,40 @@ body {
     fill: #e0e0e0;
 }
 
+
+.hoverBar {
+    fill: #fe7c1f;
+    opacity:0;
+    /* rx: 20px;
+    ry: 20px; */
+}
+
+.hoverBar.hovered {
+    opacity:1;
+   
+}
+
+.bar.hovered {
+    fill: #fe7c1f;
+    opacity:.6 !important;
+   
+}
+
+circle.member.hovered {
+    fill: #fe7c1f !important;
+   
+}
+
+.bar.clicked {
+    fill: #fe7c1f;
+    opacity:.8 !important;
+   
+}
+
+.hoverBar.clicked {
+    opacity:1 ;
+}
+
 .shepherd-modal-overlay-container.shepherd-modal-is-visible{
     opacity:.2
 }

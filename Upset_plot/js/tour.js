@@ -63,20 +63,13 @@ function setUp(){
     
 }
 let steps = [{
-    title: 'Frequency of Symptoms',
+    // title: 'Frequency of Symptoms',
     text: `This chart shows the percentage of patients that reported common COVID symptoms.`,
     attachTo: {
         element: '.horizontal-bars',
         on: 'right'
       },
     buttons: [
-    //   {
-    //     action() {
-    //       return this.back();
-    //     },
-    //     classes: 'shepherd-button-secondary',
-    //     text: 'Back'
-    //   },
       {
         action() {
           return this.next();
@@ -111,25 +104,24 @@ let steps = [{
     id: 's2'
   },
   {
-    title: 'Good Job!',
-    text: `These patients reported Fatigue and Anosmia as symptoms `,
+    // title: 'Good Job!',
+    text: `16.2% of patients reported Fatigue and Anosmia among their symptoms `,
     attachTo: {
-        element: '.horizontal-bars',
-        on: 'bottom'
+        element: '#AnosmiaFatigueVBar',
+        on: 'right'
       },
     buttons: [
       {
         action() {
-          return this.back();
+          goBack();
+          // return this.back();
         },
         classes: 'shepherd-button-secondary',
         text: 'Back'
       },
       {
         action() {
-            revealCol('#CoughAnosmiaFatigueVBar','#b')
-            
-        //   return this.next();
+            animateStep()
         },
         text: 'Next'
       },
@@ -138,22 +130,23 @@ let steps = [{
   },
   {
     // title: 'These patients reported Fatigue, Anosmia, and Cough as symptoms',
-    text: `These patients reported Fatigue, Anosmia, and Cough as symptoms`,
+    text: `14.9% reported Fatigue, Anosmia, and Cough as symptoms`,
     attachTo: {
-        element: '.horizontal-bars',
-        on: 'bottom'
+        element: '#CoughAnosmiaFatigueVBar',
+        on: 'right'
       },
     buttons: [
       {
         action() {
-          return this.back();
+          goBack();
+          // return this.back();
         },
         classes: 'shepherd-button-secondary',
         text: 'Back'
       },
       {
         action() {
-            revealCol('#FatigueVBar','#c')
+          animateStep()
         },
         text: 'Next'
       },
@@ -161,23 +154,24 @@ let steps = [{
     id: 's4'
   },
   {
-    title: 'These patients *only* reported Fatigue as a symptom',
+    title: '11.4% *only* reported Fatigue as a symptom',
     // text: `The top bars show... `,
     attachTo: {
-      element: '.horizontal-bars',
-      on: 'bottom'
+      element: '#FatigueVBar',
+      on: 'right'
     },
     buttons: [
       {
         action() {
-          return this.back();
+          goBack();
+          // return this.back();
         },
         classes: 'shepherd-button-secondary',
         text: 'Back'
       },
       {
         action() {
-            revealAllCols()
+          animateStep()
         },
         text: 'Next'
       },
@@ -194,7 +188,8 @@ let steps = [{
     buttons: [
       {
         action() {
-          return this.back();
+          goBack();
+          // return this.back();
         },
         classes: 'shepherd-button-secondary',
         text: 'Back'
@@ -218,7 +213,8 @@ let steps = [{
     buttons: [
       {
         action() {
-          return this.back();
+          goBack();
+          // return this.back();
         },
         classes: 'shepherd-button-secondary',
         text: 'Back'
@@ -230,7 +226,7 @@ let steps = [{
         text: 'Exit'
       },
     ],
-    id: 's6'
+    id: 's7'
   }]
 
 

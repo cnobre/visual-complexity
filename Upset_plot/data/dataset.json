@@ -201,32 +201,32 @@
     {
       "setId": "Fatigue",
       "size": 0.88,
-      "label": ["88% reported Fatigue as a symptom"]
+      "label": ["88%"]
     },
     {
       "setId": "Anosmia",
       "size": 0.62,
-      "label": ["62% reported Anosmia as a symptom"]
+      "label": ["62%"]
     },
     {
       "setId": "Cough",
       "size": 0.51,
-      "label": ["51% reported Cough as a symptom"]
+      "label": ["51%"]
     },
     {
       "setId": "Diarrhea",
       "size": 0.19,
-      "label": ["19% reported Diarrhea as a symptom"]
+      "label": ["19%"]
     },
     {
       "setId": "Fever",
       "size": 0.20,
-      "label": ["20% reported Fever as a symptom"]
+      "label": ["20%"]
     },
     {
       "setId": "Shortness of Breath",
       "size": 0.08,
-      "label": ["8% reported Shortness of Breath as a symptom"]
+      "label": ["8%"]
     }
   ]
 }
