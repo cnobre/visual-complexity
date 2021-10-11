@@ -1,7 +1,7 @@
-let width = 750,
-    height = 500;
+let width = 850,
+    height = 600;
 
-let padding = 70;
+let padding = 100;
 
 let formatPercent = d3.format(".0%");
 
@@ -36,6 +36,41 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .domain([d3.min(data, d => 0), d3.max(data, d => 25)])
             .range([height-padding, padding]);
 
+
+
+        function make_x_gridlines() {
+            return d3.axisBottom(vaccinationScale)
+                .ticks(10)
+        }
+
+
+        function make_y_gridlines() {
+            return d3.axisLeft(changeScale)
+                .ticks(10)
+        }
+
+
+
+        svg.append("g")
+            .attr("class", "grid")
+            .attr("transform", "translate(0," + (height - padding) + ")")
+            .style("stroke-dasharray", "3 3")
+            .call(make_x_gridlines()
+                .tickSize(-height+padding+padding)
+                .tickFormat("")
+            )
+
+
+        svg.append("g")
+            .attr("class", "grid")
+            .attr("transform", "translate(" + padding + ",0)")
+            .style("stroke-dasharray", "3 3")
+            .call(make_y_gridlines()
+                .tickSize(-width+padding+padding)
+                .tickFormat("")
+            )
+
+
         let tip = d3.tip()
             .attr("class", "d3-tip")
             .offset([-10, 0])
@@ -59,6 +94,31 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("marker-end", d => "url(#end-" + d.colour + ")")
             .on("mouseover", function(e, d) { tip.show(d, this); })
             .on("mouseout", tip.hide);
+
+
+        svg.selectAll("line-legend-red")
+            .data(data)
+            .enter()
+            .append("line")
+            .attr("x1", width-70)
+            .attr("y1", height-270)
+            .attr("x2", width-70)
+            .attr("y2", height-320)
+            .attr("stroke-width", 2)
+            .attr("stroke", "red")
+            .attr("marker-end", "url(#end-" + "red" + ")")
+
+        svg.selectAll("line-legend-purple")
+            .data(data)
+            .enter()
+            .append("line")
+            .attr("x1", width-20)
+            .attr("y1", height-320)
+            .attr("x2", width-20)
+            .attr("y2", height-270)
+            .attr("stroke-width", 2)
+            .attr("stroke", "purple")
+            .attr("marker-end", "url(#end-" + "purple" + ")")
 
 
         let defs = svg.append("svg:defs");
@@ -98,7 +158,45 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .scale(changeScale);
 
 
+        //legend title
+        svg
+            .append("text")
+            .attr("x", width-60)
+            .attr("y", height-360)
+            .attr("class", "title")
+            .text("Legend")
+            .attr("fill","black")
+            .attr("font-size", "12")
+            // .attr("font-weight","bold")
+            // .attr("text-decoration","underline")
 
+
+        //red arrow legend text
+        svg
+            .append("text")
+            .attr("x", width-90)
+            .attr("y", height-325)
+            .attr("class", "title")
+            .text("Increase")
+            .attr("fill","red")
+            .attr("font-size", "10")
+            .attr("font-weight","bold")
+
+
+
+        //purple arrow legend text
+        svg
+            .append("text")
+            .attr("x", width-45)
+            .attr("y", height-260)
+            .attr("class", "title")
+            .text("Decrease")
+            .attr("fill","purple")
+            .attr("font-size", "10")
+            .attr("font-weight","bold")
+
+
+    //overall chart title
         svg
             .append("text")
             .attr("x", width/4)
@@ -109,7 +207,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("font-size", "16")
             .attr("font-weight","bold")
 
-
+    //x axis label
         svg.append("text")
             // .attr("class", "x labels")
             .attr("text-anchor", "middle")
@@ -118,7 +216,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("y", height-10)
             .text("Share of fully vaccinated");
 
-
+    //y axis label
         svg.append("text")
             // .attr("class", "y labels")
             .attr("text-anchor", "middle")
@@ -144,38 +242,8 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .call(yAxis);
 
 
-        function make_x_gridlines() {
-            return d3.axisBottom(vaccinationScale)
-                .ticks(10)
-        }
 
 
-        function make_y_gridlines() {
-            return d3.axisLeft(changeScale)
-                .ticks(10)
-        }
-
-
-
-
-        svg.append("g")
-            .attr("class", "grid")
-            .attr("transform", "translate(0," + (height - padding) + ")")
-            .style("stroke-dasharray", "3 3")
-            .call(make_x_gridlines()
-                .tickSize(-height+padding+padding)
-                .tickFormat("")
-            )
-
-
-        svg.append("g")
-            .attr("class", "grid")
-            .attr("transform", "translate(" + padding + ",0)")
-            .style("stroke-dasharray", "3 3")
-            .call(make_y_gridlines()
-                .tickSize(-width+padding+padding)
-                .tickFormat("")
-            )
 
 
     });
