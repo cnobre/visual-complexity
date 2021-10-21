@@ -14,7 +14,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
     // row.subsequent_value = d3.randomInt(0, 25)(); //random data generator
     return row;
 
-    // console.log(row)
+
 })
 
     .then(data => {
@@ -35,7 +35,6 @@ d3.csv("data/dataset2.csv", (row,i) => {
             // .domain([d3.min(data, d => d.initial_value), d3.max(data, d => d.subsequent_value)])
             .domain([d3.min(data, d => 0), d3.max(data, d => 25)])
             .range([height-padding, padding]);
-
 
 
         function make_x_gridlines() {
@@ -71,6 +70,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
             )
 
 
+
         let tip = d3.tip()
             .attr("class", "d3-tip")
             .offset([-10, 0])
@@ -81,10 +81,83 @@ d3.csv("data/dataset2.csv", (row,i) => {
 
         svg.call(tip);
 
+
+
+        let scatter_value_subsequent_tip = d3.tip()
+            .attr("class", "d3-tip2")
+            .offset([0+8, 15])  //position of the label needs to be changed based on the initial value
+            .html(function(d) {
+                d3.select(".d3-tip2").style("color", d.colour);
+                return d.subsequent_value < d.initial_value ? d.initial_value : d.subsequent_value;
+            });
+
+        svg.call(scatter_value_subsequent_tip);
+
+
+        let scatter_value_initial_tip = d3.tip()
+            .attr("class", "d3-tip3")
+            .offset(function (d) {
+                let value = d.subsequent_value > d.initial_value ?
+                    d.subsequent_value - d.initial_value :
+                    d.initial_value - d.subsequent_value;
+                return [height-padding+7 - changeScale(value), 15];
+            }) //position of the label needs to be changed based on the initial value
+            .html(function(d) {
+                d3.select(".d3-tip3").style("color", d.colour);
+                return d.subsequent_value > d.initial_value ? d.initial_value : d.subsequent_value;
+            });
+
+
+
+        svg.call(scatter_value_initial_tip);
+
+
+        var mouseover =  function(e, d) {
+
+            tip.show(d, this);
+
+            scatter_value_subsequent_tip.show(d, this);
+
+            scatter_value_initial_tip.show(d, this);
+
+            selected = (d, this)
+
+
+            d3.selectAll("line.arrow")
+                .transition()
+                .duration(300)
+                .style("opacity", 0.2)
+
+            d3.select(this)
+                .transition()
+                .duration(300)
+                .style("opacity", 1)
+
+        }
+
+
+        var mouseout = function(d) {
+
+            tip.hide(d, this);
+
+            scatter_value_subsequent_tip.hide(d, this);
+
+            scatter_value_initial_tip.hide(d, this);
+
+            d3.selectAll("line.arrow")
+                .transition()
+                .duration(300)
+                .style("opacity", 1)
+        }
+
+
+
+
         svg.selectAll("line")
             .data(data)
             .enter()
             .append("line")
+            .attr("class", "arrow")
             .attr("x1", d => vaccinationScale(d.vaccination_rate))
             .attr("y1", d => changeScale(d.initial_value))
             .attr("x2", d => vaccinationScale(d.vaccination_rate))
@@ -92,8 +165,8 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("stroke-width", 2)
             .attr("stroke", d => d.colour)
             .attr("marker-end", d => "url(#end-" + d.colour + ")")
-            .on("mouseover", function(e, d) { tip.show(d, this); })
-            .on("mouseout", tip.hide);
+            .on("mouseover", mouseover)
+            .on("mouseout", mouseout)
 
 
         svg.selectAll("line-legend-red")
@@ -107,6 +180,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("stroke-width", 2)
             .attr("stroke", "red")
             .attr("marker-end", "url(#end-" + "red" + ")")
+
 
         svg.selectAll("line-legend-purple")
             .data(data)
@@ -134,6 +208,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .append("svg:path")
             .attr("d", "M0,-5L10,0L0,5")
             .attr("fill", "red");
+
 
         defs
             .append("svg:marker")
@@ -166,9 +241,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("class", "title")
             .text("Legend")
             .attr("fill","black")
-            .attr("font-size", "12")
-            // .attr("font-weight","bold")
-            // .attr("text-decoration","underline")
+            .attr("font-size", "12");
 
 
         //red arrow legend text
@@ -180,7 +253,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .text("Increase")
             .attr("fill","red")
             .attr("font-size", "10")
-            .attr("font-weight","bold")
+            .attr("font-weight","bold");
 
 
 
@@ -227,22 +300,15 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .text("No. of hospitalized per  100,000 people");
 
 
-
-
         svg.append("g")
-            .attr("class", "axis x-axis")
+            // .attr("class", "axis x-axis")
             .attr("transform", "translate(0," + (height - padding) + ")")
             .call(xAxis);
-
-
 
 
         svg.append("g")
             .attr("transform", "translate(" + padding + ",0)")
             .call(yAxis);
-
-
-
 
 
 

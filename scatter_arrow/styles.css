@@ -26,7 +26,16 @@ body {
 
 .d3-tip {
     padding: 2px;
-    color: red;
+    font-size: 11px;
+}
+
+.d3-tip2 {
+    padding: 2px;
+    font-size: 11px;
+}
+
+.d3-tip3 {
+    padding: 2px;
     font-size: 11px;
 }
 
@@ -59,3 +68,4 @@ body {
     margin-right: 2px;
     background-color: teal;
 }
+
