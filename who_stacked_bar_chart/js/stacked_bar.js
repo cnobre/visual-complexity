@@ -17,11 +17,9 @@ const svg = d3.select("#my_dataviz")
 
         .then( function(data) {
 
-        const subgroups = data.columns.slice(1)
+        const subgroups = data.columns.slice(1);
 
-
-        const groups = data.map(d => (d.group))
-
+        const groups = data.map(d => (d.group));
 
         const x = d3.scaleBand()
             .domain(groups)
@@ -34,7 +32,7 @@ const svg = d3.select("#my_dataviz")
 
         const color = d3.scaleOrdinal()
             .domain(subgroups)
-            .range(["#bf2183", "#206fbe", "#00a687", "#47199c", "#c0d058", "#feac3d","grey"])
+            .range(["#bf2183", "#206fbe", "#00a687", "#47199c", "#c0d058", "#feac3d"])
 
         const stackedData = d3.stack()
             .keys(subgroups)
@@ -57,14 +55,32 @@ const svg = d3.select("#my_dataviz")
         const mouseover = function(event, d) {
             const subgroupName = d3.select(this.parentNode).datum().key;
             const subgroupValue = d.data[subgroupName];
+            let date = d.data.group;
+
+            let dataForDate = data.filter(f => f.group === date)[0];
+            let total = 0;
+            subgroups.forEach(sg => total += parseInt(dataForDate[sg]));
+
             tooltip
-                .html(`<b>Week: </b>${d.data.group} <br><b>Region: </b>  ${subgroupName}<br><b>New cases: </b> ${subgroupValue} `)
+                .html(`<b>Week:</b> ${d.data.group}<br>
+                       <b>Region:</b> <span style="color: ${color(subgroupName)}">${subgroupName}</span><br>
+                       <b>New cases:</b> <span style="color: ${color(subgroupName)}">${subgroupValue}</span><br>
+                       <b>Total cases:</b> ${total}`)
                 .style("opacity", 1)
-                .style("font-size", "12px")
-            d3.select(this)
-                .style("stroke", "black")
+                .style("font-size", "12px");
+
+            let rects = d3.selectAll(".date-" + date);
+            let rect = rects._groups[0][rects._groups[0].length-1].getBBox();
+            svg
+                .append("rect")
+                .attr('class', "hover")
+                .attr('x', rect.x)
+                .attr('y', rect.y)
+                .attr('width', rect.width)
+                .attr('height', height - rect.y)
+                .attr('stroke', 'black')
                 .style("stroke-width", "2.5")
-                .style("opacity", 1)
+                .attr('fill', 'none');
         }
 
 
@@ -79,7 +95,7 @@ const svg = d3.select("#my_dataviz")
         const mouseleave = function(event, d) {
             tooltip
                 .style("opacity", 0)
-            d3.select(this)
+            d3.selectAll(".hover")
                 .style("stroke", "none")
                 // .style("stroke-width", "2.5")
         }
@@ -128,6 +144,7 @@ const svg = d3.select("#my_dataviz")
 
 
 
+
         svg.append("g")
             .selectAll("g")
             .data(stackedData)
@@ -138,32 +155,34 @@ const svg = d3.select("#my_dataviz")
             .join("rect")
             .attr("x", d => x(d.data.group))
             .attr("y", d => y(d[1]))
+            .attr("class", d => "date date-" + d.data.group)
             .attr("height", d => y(d[0]) - y(d[1]))
             .attr("width",x.bandwidth())
+            .attr("total", d=>d.total)
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave);
 
 
 
-        var size = 10
+        const size = 10;
+        let legendGroups = subgroups.slice().reverse();
         svg.selectAll("mylegend")
-            .data(subgroups)
+            .data(legendGroups)
             .enter()
             .append("rect")
             .attr("x", width+35)
-            .attr("y", function(d,i){ return 110 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("y", function(d,i){ return 110 + i*(size+5)})
             .attr("width", size)
             .attr("height", size)
-            .style("fill", function(d){ return color(d)})
-
+            .style("fill", function(d){ return color(d)});
 
         svg.selectAll("mylegendlabels")
-            .data(subgroups)
+            .data(legendGroups)
             .enter()
             .append("text")
             .attr("x", width+35 + size*1.2)
-            .attr("y", function(d,i){ return 110 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("y", function(d,i){ return 110 + i*(size+5) + (size/2)})
             .style("fill", function(d){ return color(d)})
             .text(function(d){ return d})
             .attr("text-anchor", "left")
