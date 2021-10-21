@@ -1,0 +1,566 @@
+{
+  "children": [
+    {
+      "name": "business",
+      "children": [
+        {
+          "name": "$2.3 trillion",
+          "group": "Delay employer payroll tax payments for some businesses",
+          "label2": "",
+          "label3": "",
+          "value": 352,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Provide forgivable small-business loans (Paycheck Protection Program)",
+          "label2": "Provide forgivable small-business loans (Paycheck Protection Program)",
+          "label3": "$349B",
+          "value": 349,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase funding for forgivable small-business loans(Paycheck Protection Program)",
+          "label2": "Increase funding for forgivable small-business loans(Paycheck Protection Program)",
+          "label3": "$321B",
+          "value": 321,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Expand ability for corporatins to deduct lossess from taxes",
+          "label2": "",
+          "label3": "",
+          "value": 81,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Offer payroll tax credits for some bisiness that retain workers at loss",
+          "label2": "",
+          "label3": "",
+          "value": 55,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase small-business emergency loan (EIDL) authorization",
+          "label2": "",
+          "label3": "",
+          "value": 366,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Support $4.5 trillion of Federal Reserve loans",
+          "label2": "",
+          "label3": "",
+          "value": 454,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Provide emergency grants (EIDL) for small businesses",
+          "label2": "",
+          "label3": "",
+          "value": 10,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase funding for small emergency grants (EIDL)",
+          "label2": "",
+          "label3": "",
+          "value": 10,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Subsadize loan payments for existing SBA loans for six months",
+          "label2": "",
+          "label3": "",
+          "value": 17,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Provide loans to airlines and firms vital to national security",
+          "label2": "",
+          "label3": "",
+          "value": 46,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Provide grants to airlines to avoid furloughs and pay cuts",
+          "label2": "",
+          "label3": "",
+          "value": 32,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Suspend aviation taxes",
+          "label2": "",
+          "label3": "",
+          "value": 4,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Payments to farmers",
+          "label2": "",
+          "label3": "",
+          "value": 24,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase funding for Small Business Administration",
+          "label2": "",
+          "label3": "",
+          "value": 2,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "SBA",
+          "label2": "",
+          "label3": "",
+          "value": 3,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Commerce Department",
+          "label2": "",
+          "label3": "",
+          "value": 2,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Refund AMT credits to corporations",
+          "label2": "",
+          "label3": "",
+          "value": 3,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Loosen TCJA-imposed cap on interest deducatibility",
+          "label2": "",
+          "label3": "",
+          "value": 11,
+          "colname": "level3"
+        }
+
+      ],
+      "colname": "level2"
+    },
+    {
+      "name": "individuals",
+      "children": [
+        {
+          "name": "$884 billion",
+          "group": "Provide tax rebates of $1,200/adult and $500/child",
+          "label2": "",
+          "label3": "",
+          "value": 293,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase UI benefits by $600/week",
+          "label2": "Increase UI benefits by $600/week",
+          "label3": "$286B",
+          "value": 286,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Pandemic Unemployment Assistance",
+          "label2": "",
+          "label3": "",
+          "value": 81,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Pandemic Emergency Unemployment Compensation",
+          "label2": "",
+          "label3": "",
+          "value": 59,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Defer student loan payments for six months and preserve student aid",
+          "label2": "",
+          "label3": "",
+          "value": 30,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Boost housing support",
+          "label2": "",
+          "label3": "",
+          "value": 12,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Allow emergency retirement account withdrawals",
+          "label2": "",
+          "label3": "",
+          "value": 8,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase child and family services funding",
+          "label2": "",
+          "label3": "",
+          "value": 6,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Let non-itemized deduct up to $300 of charitable donations and loosen caps on charitable deduction",
+          "label2": "",
+          "label3": "",
+          "value": 6,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase funding foe nutrition programs",
+          "label2": "",
+          "label3": "",
+          "value": 1,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase SNAP and child nutrition funding",
+          "label2": "",
+          "label3": "",
+          "value": 27,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Allow states to increase SNAP benefits, waive work requirements",
+          "label2": "",
+          "label3": "",
+          "value": 19,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Retirements tax provisions",
+          "label2": "",
+          "label3": "",
+          "value": 14,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Housing",
+          "label2": "",
+          "label3": "",
+          "value": 12,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Additional unemployment provisions and UI revenue effects",
+          "label2": "",
+          "label3": "",
+          "value": 7,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Fund extended unemployment benefits past 26 weeks",
+          "label2": "",
+          "label3": "",
+          "value": 4,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Funding of first week of UI benefits",
+          "label2": "",
+          "label3": "",
+          "value": 15,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Partial reimbursement of governments and nonprofits",
+          "label2": "",
+          "label3": "",
+          "value": 4,
+          "colname": "level3"
+        }
+      ],
+      "colname": "level2"
+    },
+    {
+      "name": "government",
+      "children": [
+        {
+          "name": "$253 billion",
+          "group": "Provide aid to states for pandemic-related costs",
+          "label2": "",
+          "label3": "",
+          "value": 150,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Establish Education Stabilization Fund for states",
+          "label2": "",
+          "label3": "",
+          "value": 17,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Higher education funding",
+          "label2": "",
+          "label3": "",
+          "value": 14,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Provide grants to publically owned commercial airports",
+          "label2": "",
+          "label3": "",
+          "value": 10,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Provide loan to Postal Service",
+          "label2": "",
+          "label3": "",
+          "value": 10,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Transportation",
+          "label2": "",
+          "label3": "",
+          "value": 11,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Issue infrastructure grants to transit providers, including state and local governments",
+          "label2": "",
+          "label3": "",
+          "value": 25,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "National Defense",
+          "label2": "",
+          "label3": "",
+          "value": 8,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Foreign Affairs",
+          "label2": "",
+          "label3": "",
+          "value": 5,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Justice",
+          "label2": "",
+          "label3": "",
+          "value": 1,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Environmental agencies",
+          "label2": "",
+          "label3": "",
+          "value": 1,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Treasury",
+          "label2": "",
+          "label3": "",
+          "value": 1,
+          "colname": "level3"
+        }
+      ],
+      "colname": "level2"
+    },
+    {
+      "name": "medicine",
+      "children": [
+        {
+          "name": "$363 billion",
+          "group": "Provide payments to hospitals (Provider Relief Fund)",
+          "label2": "Provide payments to hospitals (Provider Relief Fund)",
+          "label3": "$175B",
+          "value": 175,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Mandate and subsidize emergency paid leave",
+          "label2": "",
+          "label3": "",
+          "value": 105,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Expand health provider emergency grant fund program for covid-19 preparadness and expenses",
+          "label2": "",
+          "label3": "",
+          "value": 47,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase Medical matching funds to states",
+          "label2": "",
+          "label3": "",
+          "value": 165,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Health-care worforece training",
+          "label2": "",
+          "label3": "",
+          "value": 3,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Vaccine and treatment development",
+          "label2": "",
+          "label3": "",
+          "value": 14,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Expand FEMA Disaster Assistance Fund",
+          "label2": "",
+          "label3": "",
+          "value": 45,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Require and partially fund free coronavirus testing",
+          "label2": "",
+          "label3": "",
+          "value": 13,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase preparedness and health agency funding",
+          "label2": "",
+          "label3": "",
+          "value": 12,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase funding towards veterans and defense health",
+          "label2": "",
+          "label3": "",
+          "value": 17,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Veterans Affairs",
+          "label2": "",
+          "label3": "",
+          "value": 2,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Waive restrictions for Medicare telehealth and other spending",
+          "label2": "",
+          "label3": "",
+          "value": 1,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase funding for Centers for Disease Control and Prevention",
+          "label2": "",
+          "label3": "",
+          "value": 2,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Increase Medical payments and repeal sequester, expand telehealth and home services, fund community health centers",
+          "label2": "",
+          "label3": "",
+          "value": 22,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Fund R&D for vaccines, testing and other treatments",
+          "label2": "",
+          "label3": "",
+          "value": 1,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Allow use of health savings accounts for over-the-counter medication and menstrual products",
+          "label2": "",
+          "label3": "",
+          "value": 9,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Healthy smart program",
+          "label2": "",
+          "label3": "",
+          "value": 1,
+          "colname": "level3"
+        },
+        {
+          "name": "",
+          "group": "Administration for community leaving",
+          "label2": "",
+          "label3": "",
+          "value": 1,
+          "colname": "level3"
+        }
+      ],
+      "colname": "level2"
+    }
+  ],
+  "name": "CEO"
+}
