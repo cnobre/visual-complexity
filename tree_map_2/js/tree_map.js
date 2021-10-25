@@ -62,6 +62,125 @@ d3.json("data/dataset.json").then( function(data) {
     }
 
 
+    const mouseover_business = function(event, d) {
+        d3.selectAll("rect.business_border")
+            .style("stroke-width", "5.5");
+
+        d3.select(this)
+            .style("font-size","16px");
+
+        d3.selectAll("text.business_label")
+            .style("font-size","12px");
+
+        d3.selectAll("text.text-business")
+            .style("font-size","16px");
+
+
+    }
+
+
+
+    const mouseleave_business = function(event,d) {
+        d3.selectAll("rect.business_border")
+            .style("stroke-width", "3.5");
+
+        d3.select(this)
+            .style("font-size","15px");
+
+        d3.selectAll("text.business_label")
+            .style("font-size","10px");
+
+        d3.selectAll("text.text-business")
+            .style("font-size","15px");
+    }
+
+
+    const mouseover_individuals = function(event, d) {
+        d3.selectAll("rect.individuals_border")
+            .style("stroke-width", "5.5");
+
+        d3.select(this)
+            .style("font-size","16px");
+
+        d3.selectAll("text.individuals_label")
+            .style("font-size","12px");
+
+        d3.selectAll("text.text-individuals")
+            .style("font-size","16px");
+
+    }
+
+    const mouseleave_individuals = function(event,d) {
+        d3.selectAll("rect.individuals_border")
+            .style("stroke-width", "3.5");
+
+        d3.select(this)
+            .style("font-size","15px");
+
+        d3.selectAll("text.individuals_label")
+            .style("font-size","10px");
+
+        d3.selectAll("text.text-individuals")
+            .style("font-size","15px");
+    }
+
+
+    const mouseover_government = function(event, d) {
+        d3.selectAll("rect.government_border")
+            .style("stroke-width", "5.5");
+
+        d3.select(this)
+            .style("font-size","16px");
+
+        d3.selectAll("text.government_label")
+            .style("font-size","12px");
+
+        d3.selectAll("text.text-government")
+            .style("font-size","16px");
+    }
+
+    const mouseleave_government = function(event,d) {
+        d3.selectAll("rect.government_border")
+            .style("stroke-width", "3.5");
+
+        d3.select(this)
+            .style("font-size","15px");
+
+        d3.selectAll("text.government_label")
+            .style("font-size","10px");
+
+        d3.selectAll("text.text-government")
+            .style("font-size","15px");
+    }
+
+    const mouseover_medicine = function(event, d) {
+        d3.selectAll("rect.medicine_border")
+            .style("stroke-width", "5.5");
+
+        d3.select(this)
+            .style("font-size","16px");
+
+        d3.selectAll("text.medicine_label")
+            .style("font-size","12px");
+
+        d3.selectAll("text.text-medicine")
+            .style("font-size","16px");
+    }
+
+    const mouseleave_medicine = function(event,d) {
+        d3.selectAll("rect.medicine_border")
+            .style("stroke-width", "3.5");
+
+        d3.select(this)
+            .style("font-size","15px");
+
+        d3.selectAll("text.medicine_label")
+            .style("font-size","10px");
+
+        d3.selectAll("text.text-medicine")
+            .style("font-size","15px");
+    }
+
     d3.treemap()
         .size([width, height])
         .paddingInner(2)
@@ -186,6 +305,8 @@ d3.json("data/dataset.json").then( function(data) {
         .attr('width', "100px")
         .attr('height', "25px")
         .style("fill", "black" )
+        .on("mouseover",mouseover_business)
+        .on("mouseleave", mouseleave_business);
 
     svg
         .append("rect")
@@ -194,6 +315,8 @@ d3.json("data/dataset.json").then( function(data) {
         .attr('width', "130px")
         .attr('height', "25px")
         .style("fill", "black" )
+        .on("mouseover",mouseover_individuals)
+        .on("mouseleave", mouseleave_individuals);
 
 
     svg
@@ -203,6 +326,8 @@ d3.json("data/dataset.json").then( function(data) {
         .attr('width', "90px")
         .attr('height', "25px")
         .style("fill", "black" )
+        .on("mouseover",mouseover_government)
+        .on("mouseleave", mouseleave_government);
 
 
     svg
@@ -211,64 +336,122 @@ d3.json("data/dataset.json").then( function(data) {
         .attr('y', height+2.5)
         .attr('width', "145px")
         .attr('height', "25px")
-        .style("fill", "black" )
+        .style("fill", "black")
+        .on("mouseover",mouseover_medicine)
+        .on("mouseleave", mouseleave_medicine);
 
-    //overall border overlay for categories
+
+    //overall border overlay for business category
     svg
         .append("rect")
+        .attr("class", "business_border")
         .attr('x', 0)
         .attr('y', 0)
-        .attr('width', width)
+        .attr('width', 491.5)
         .attr('height', height)
         .style("stroke", "black")
-        .style("stroke-width", "2.5")
-        .style("fill", "none" )
+        .style("stroke-width", "3.5")
+        .style("fill", "none" );
 
-    //line between categories (horizontal)
+    //overall border overlay for individuals category
     svg
         .append("rect")
+        .attr("class", "individuals_border")
         .attr('x', 491.5)
         .attr('y', 0)
-        .attr('width', "2.5px")
-        .attr('height', height)
-        .style("fill", "black" )
+        .attr('width', 810-491.5)
+        .attr('height', 275)
+        .style("stroke", "black")
+        .style("stroke-width", "3.5")
+        .style("fill", "none" );
 
-    //line between categories (vertical)
+    //overall border overlay for individuals category
     svg
         .append("rect")
-        .attr('x', 493)
-        .attr('y', 275)
-        .attr('width',width-494)
-        .attr('height', "2.5px")
-        .style("fill", "black" )
-
-
-
-    //line between categories (vertical)
-    svg
-        .append("rect")
+        .attr("class", "government_border")
         .attr('x', 810)
         .attr('y', 0)
-        .attr('width',"2.5px")
-        .attr('height', "275px")
-        .style("fill", "black" )
+        .attr('width', width-810)
+        .attr('height', 275)
+        .style("stroke", "black")
+        .style("stroke-width", "3.5")
+        .style("fill", "none" )
+
+    //overall border overlay for medicine category
+    svg
+        .append("rect")
+        .attr("class", "medicine_border")
+        .attr('x', 491.5)
+        .attr('y', 275)
+        .attr('width', width-491.5)
+        .attr('height', height-275)
+        .style("stroke", "black")
+        .style("stroke-width", "3.5")
+        .style("fill", "none" )
 
 
 
 
     svg
-        .selectAll("text")
-        .data(root.leaves())
+        .selectAll("text-business")
+        .data(root.leaves()[0])
         .enter()
         .append("text")
-        .attr("x", function(d){ return d.x0+2})
+        .attr("class", "text-business")
+        .attr("x", function(d){ return d.x0+5})
         .attr("y", function(d){ return d.y0+20})
-        .text(function(d){ return d.data.name })
+        .text(function(d){ return data.children[0].children[0].name})
         .attr("font-size", "15px")
         .attr("fill", "black")
-        .attr("font-weight", "bold");
+        .attr("font-weight", "bold")
+        .on("mouseover",mouseover_business)
+        .on("mouseleave", mouseleave_business);
 
 
+    svg
+        .selectAll("text-individuals")
+        .data(root.leaves()[19])
+        .enter()
+        .append("text")
+        .attr("class", "text-individuals")
+        .attr("x", function(d){ return d.x0+5})
+        .attr("y", function(d){ return d.y0+20})
+        .text(function(d){ return data.children[1].children[0].name})
+        .attr("font-size", "15px")
+        .attr("fill", "black")
+        .attr("font-weight", "bold")
+        .on("mouseover",mouseover_individuals)
+        .on("mouseleave", mouseleave_individuals);
+
+    svg
+        .selectAll("text-government")
+        .data(root.leaves()[37])
+        .enter()
+        .append("text")
+        .attr("class", "text-government")
+        .attr("x", function(d){ return d.x0+2})
+        .attr("y", function(d){ return d.y0+20})
+        .text(function(d){ return data.children[2].children[0].name})
+        .attr("font-size", "15px")
+        .attr("fill", "black")
+        .attr("font-weight", "bold")
+        .on("mouseover",mouseover_government)
+        .on("mouseleave", mouseleave_government);
+
+    svg
+        .selectAll("text-medicine")
+        .data(root.leaves()[49])
+        .enter()
+        .append("text")
+        .attr("class", "text-medicine")
+        .attr("x", function(d){ return d.x0+5})
+        .attr("y", function(d){ return d.y0+20})
+        .text(function(d){ return data.children[3].children[0].name})
+        .attr("font-size", "15px")
+        .attr("fill", "black")
+        .attr("font-weight", "bold")
+        .on("mouseover",mouseover_medicine)
+        .on("mouseleave", mouseleave_medicine);
 
     svg
         .selectAll("text2")
@@ -297,16 +480,31 @@ d3.json("data/dataset.json").then( function(data) {
         .attr("font-weight", "bold")
 
 
+    const mouseover_text = function(event, d) {
+        d3.select(this)
+            .style("font-size", "13px")
+    }
+
+
+    const mouseleave_text = function(event,d) {
+        d3.select(this)
+            .style("font-size", "9px")
+
+    }
 
     svg
         .append("text")
         .attr("x",margin.left)
         .attr("y", -10)
         .text("BUSINESS")
-        .attr("font-size", "11px")
+        .attr("class", "business_label")
+        .attr("font-size", "10px")
         .attr("fill",  "white" )
         .style("font-weight", "bold")
         .style("text-anchor","middle")
+        .on("mouseover", mouseover_business)
+        .on("mouseleave", mouseleave_business);
+
 
 
     svg
@@ -314,30 +512,40 @@ d3.json("data/dataset.json").then( function(data) {
         .attr("x",width/2+110)
         .attr("y", -10)
         .text("INDIVIDUALS")
-        .attr("font-size", "11px")
+        .attr("class", "individuals_label")
+        .attr("font-size", "10px")
         .attr("fill",  "white" )
         .style("font-weight", "bold")
         .style("text-anchor","middle")
+        .on("mouseover", mouseover_individuals)
+        .on("mouseleave", mouseleave_individuals);
 
     svg
         .append("text")
         .attr("x",856)
         .attr("y", -10)
-        .text("GOVERNMENTS")
-        .attr("font-size", "11px")
+        .text("GOVERNMENT")
+        .attr("class", "government_label")
+        .attr("font-size", "10px")
         .attr("fill",  "white" )
         .style("font-weight", "bold")
         .style("text-anchor","middle")
+        .on("mouseover", mouseover_government)
+        .on("mouseleave", mouseleave_government);
+
 
     svg
         .append("text")
         .attr("x",width/2+110)
         .attr("y", height+20)
         .text("MEDICINE")
-        .attr("font-size", "11px")
+        .attr("class", "medicine_label")
+        .attr("font-size", "10px")
         .attr("fill",  "white" )
         .style("font-weight", "bold")
         .style("text-anchor","middle")
+        .on("mouseover", mouseover_medicine)
+        .on("mouseleave", mouseleave_medicine);
 
 
 

@@ -32,7 +32,9 @@ const svg = d3.select("#my_dataviz")
 
         const color = d3.scaleOrdinal()
             .domain(subgroups)
-            .range(["#bf2183", "#206fbe", "#00a687", "#47199c", "#c0d058", "#feac3d"])
+            .range(["#bf2183", "#206fbe", "#00a687", "#47199c", "#606e04",  "#ee8c07"])
+            //
+
 
         const stackedData = d3.stack()
             .keys(subgroups)
@@ -61,11 +63,13 @@ const svg = d3.select("#my_dataviz")
             let total = 0;
             subgroups.forEach(sg => total += parseInt(dataForDate[sg]));
 
+
             tooltip
                 .html(`<b>Week:</b> ${d.data.group}<br>
-                       <b>Region:</b> <span style="color: ${color(subgroupName)}">${subgroupName}</span><br>
-                       <b>New cases:</b> <span style="color: ${color(subgroupName)}">${subgroupValue}</span><br>
-                       <b>Total cases:</b> ${total}`)
+                       <b>Total cases:</b> ${total}<br>
+                       <br>
+                       <span style="font-size:11px;color: ${color(subgroupName)}"><b>Region:</b> ${subgroupName}</span><br>
+                       <span style="font-size:11px;color: ${color(subgroupName)}"><b>New cases:</b> ${subgroupValue}</span><br>`)
                 .style("opacity", 1)
                 .style("font-size", "12px");
 
