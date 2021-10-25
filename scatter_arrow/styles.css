@@ -39,6 +39,11 @@ body {
     font-size: 11px;
 }
 
+.d3-tip5 {
+    padding: 2px;
+    font-size: 7px;
+}
+
 
 .line {
     fill: none;
@@ -51,6 +56,13 @@ body {
     stroke-opacity: 0.7;
     shape-rendering: crispEdges;
 }
+
+
+/*.grid_red {*/
+/*    stroke: red;*/
+/*    stroke-opacity: 1;*/
+/*    shape-rendering: crispEdges;*/
+/*}*/
 
 .grid path {
     stroke-width: 0;
