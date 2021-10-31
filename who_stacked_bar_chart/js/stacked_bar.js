@@ -71,7 +71,13 @@ const svg = d3.select("#my_dataviz")
                        <span style="font-size:11px;color: ${color(subgroupName)}"><b>Region:</b> ${subgroupName}</span><br>
                        <span style="font-size:11px;color: ${color(subgroupName)}"><b>New cases:</b> ${subgroupValue}</span><br>`)
                 .style("opacity", 1)
-                .style("font-size", "12px");
+                .style("font-size", "12px")
+                .style("left", ((event.x) +10) + "px")
+                .style("top", ((event.y) +10) + "px");
+
+
+
+            d3.selectAll(".date").style("opacity", 0.5);
 
             let rects = d3.selectAll(".date-" + date);
             let rect = rects._groups[0][rects._groups[0].length-1].getBBox();
@@ -83,25 +89,25 @@ const svg = d3.select("#my_dataviz")
                 .attr('width', rect.width)
                 .attr('height', height - rect.y)
                 .attr('stroke', 'black')
-                .style("stroke-width", "2.5")
+                .style("stroke-width", "1.5")
                 .attr('fill', 'none');
+
+
+            rects.style("opacity", 1);
+
         }
-
-
-        var mousemove = function(event, d) {
-            tooltip
-                .style("left", (event.x)/2 + 100+ "px")
-                .style("top", (event.y)/2 + 100+"px")
-        }
-
 
 
         const mouseleave = function(event, d) {
             tooltip
                 .style("opacity", 0)
             d3.selectAll(".hover")
-                .style("stroke", "none")
-                // .style("stroke-width", "2.5")
+                .style("stroke", "none");
+
+
+
+            d3.selectAll("rect")
+                .style("opacity", 1)
         }
 
 
@@ -148,7 +154,6 @@ const svg = d3.select("#my_dataviz")
 
 
 
-
         svg.append("g")
             .selectAll("g")
             .data(stackedData)
@@ -164,7 +169,6 @@ const svg = d3.select("#my_dataviz")
             .attr("width",x.bandwidth())
             .attr("total", d=>d.total)
             .on("mouseover", mouseover)
-            .on("mousemove", mousemove)
             .on("mouseleave", mouseleave);
 
 
@@ -192,6 +196,5 @@ const svg = d3.select("#my_dataviz")
             .attr("text-anchor", "left")
             .style("font-size", "10")
             .style("alignment-baseline", "middle")
-
-
+            
         })
