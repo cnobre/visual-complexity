@@ -102,7 +102,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
             .attr("class", "d3-tip5")
             .offset(function(d){
                     let value = (d.vaccination_rate)
-                    return [0+7.3, -(vaccinationScale(value)-padding+15.2)];
+                    return [0+7.3, -(vaccinationScale(value)-padding+15.2-27)];
             })
             .html(function(d) {
                     d3.select(".d3-tip5").style("font-size","10px").style("color", d.colour);
@@ -119,7 +119,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
                     d.subsequent_value - d.initial_value :
                     d.initial_value - d.subsequent_value;
                 return [height-padding+7 - changeScale(value), 15];
-            }) //position of the label needs to be changed based on the initial value
+            })
             .html(function(d) {
                 d3.select(".d3-tip3").style("color", d.colour);
                 return d.subsequent_value > d.initial_value ? d.initial_value : d.subsequent_value;
@@ -136,7 +136,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
                     let value2 = d.subsequent_value > d.initial_value ?
                         d.subsequent_value - d.initial_value :
                         d.initial_value - d.subsequent_value;
-                    return [height-padding+7 - changeScale(value2), -(vaccinationScale(value)-padding+15.2)];
+                    return [height-padding+7 - changeScale(value2), -(vaccinationScale(value)-padding+15.2-27)];
             })
             .html(function(d) {
                     d3.select(".d3-tip6").style("font-size","10px").style("color", d.colour);
@@ -146,6 +146,9 @@ d3.csv("data/dataset2.csv", (row,i) => {
 
 
         svg.call(scatter_value_initial_tip_on_axis);
+
+
+
 
 
         var mouseover =  function(e, d) {
@@ -168,7 +171,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
                 //dashed initial x value line
                 svg.append("line")
                     .attr("class", "line-helper")
-                    .attr("x1", padding)
+                    .attr("x1", padding+23)
                     .attr("y1", changeScale(d.initial_value))
                     .attr("x2", vaccinationScale(d.vaccination_rate))
                     .attr("y2", changeScale(d.initial_value))
@@ -181,7 +184,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
                 //dashed subsequent x value line
                 svg.append("line")
                     .attr("class", "line-helper")
-                    .attr("x1", padding)
+                    .attr("x1", padding+23)
                     .attr("y1", changeScale(d.subsequent_value))
                     .attr("x2", vaccinationScale(d.vaccination_rate))
                     .attr("y2", changeScale(d.subsequent_value))
@@ -204,7 +207,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
                     .attr("opacity", 0.7);
 
 
-                //text helper - y axis
+                //text helper - x label axis
                 svg.append("text")
                     .attr("class", 'text-helper')
                     .attr("x", vaccinationScale(d.vaccination_rate) - 110)
@@ -264,15 +267,17 @@ d3.csv("data/dataset2.csv", (row,i) => {
                     .append("tspan")
                     .text(increase_decrease_label)
                     .attr("fill", increase_decrease_color);
-            }
+            };
+
+
 
             //change opacity to all non-highlighted arrows
             d3.selectAll("line.arrow")
                 .style("opacity", 0.1)
 
             //reference this particular, highlighted arrow with 1 opacity
-            d3.select(this)
-                .style("opacity", 1)
+            svg.select("#arrow-line-" + d.state_short).style("opacity", 1);
+
 
             //change opacity based on a selected arrow for legend arrows
             if (d.initial_value < d.subsequent_value) {
@@ -318,6 +323,7 @@ d3.csv("data/dataset2.csv", (row,i) => {
 
 
 
+
         //draw lines & append arrow markers; option to filter only red or only purple arrows
         svg.selectAll("line")
             .data(data)
@@ -326,16 +332,40 @@ d3.csv("data/dataset2.csv", (row,i) => {
             //.filter(function(d){ return d.colour == 'red' }) //filters red arrows
             // .filter(function(d){ return d.colour == 'purple' }) //filters purple arrows
             .attr("class", "arrow")
+            .attr("id", d => "arrow-line-" + d.state_short)
             .attr("x1", d => vaccinationScale(d.vaccination_rate))
             .attr("y1", d => changeScale(d.initial_value))
             .attr("x2", d => vaccinationScale(d.vaccination_rate))
             .attr("y2", d => changeScale(d.subsequent_value))
             .attr("stroke-width", 2)
             .attr("stroke", d => d.colour)
-            .attr("marker-end", d => "url(#end-" + d.colour + ")")
-            .on("mouseover", mouseover)
-            .on("mouseout", mouseout)
+            .attr("marker-end", d => "url(#end-" + d.colour + ")");
 
+
+
+        //transparent behind-the-arrows rectangles helping with the mouseover - i.e. less precision
+        svg
+            .selectAll("rect")
+            .data(data)
+            .join("rect")
+            .attr("class", "arrow-rect")
+            .attr('x', function (d) { return vaccinationScale(d.vaccination_rate) -10; })
+            .attr('y', function (d) {
+                let value = d.subsequent_value > d.initial_value ?
+                    changeScale(d.subsequent_value) :
+                    changeScale(d.initial_value);
+                return value;})
+            .attr('width', "20px")
+            .attr('height',
+                function (d) {
+                    let value = d.subsequent_value < d.initial_value ?
+                        changeScale(d.subsequent_value) - changeScale(d.initial_value) :
+                        changeScale(d.initial_value) - changeScale(d.subsequent_value) ;
+                    return (value);}
+            )
+            .style("opacity", "0" )
+            .on("mouseover", mouseover)
+            .on("mouseout", mouseout);
 
         //red arrow - legend
         svg
