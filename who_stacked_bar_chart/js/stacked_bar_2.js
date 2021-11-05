@@ -5,7 +5,7 @@ const margin = {top: 70, right: 150, bottom: 50, left: 100},
 
 const padding = 70;
 
-const svg = d3.select("#stackedchart")
+const svg = d3.select("#my_dataviz")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -36,24 +36,25 @@ d3.csv("data/daily_cases_weekly2.csv")
         //
 
 
+
         const stackedData = d3.stack()
             .keys(subgroups)
             (data)
 
-        console.log(stackedData[0])
-
+        console.log(stackedData[5]);
 
         bottom_axis = d3.axisBottom(x).tickValues(x.domain().filter(function(d,i){ return !(i%10)}));
 
 
-        const tooltip = d3.select("#stackedchart")
+        const tooltip = d3.select("#my_dataviz")
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip")
             .style("background-color", "white")
             .style("box-shadow", "2px 2px 4px lightgrey")
             .style("padding", "10px")
-
+        //.style("color", d=>d.color)
+        // .attr("fill", d => color(d.key))
 
         const mouseover = function(event, d) {
             const subgroupName = d3.select(this.parentNode).datum().key;
@@ -112,7 +113,7 @@ d3.csv("data/daily_cases_weekly2.csv")
         }
 
 
-    //overall title
+
         svg
             .append("text")
             .attr("x", width/4)
@@ -123,16 +124,18 @@ d3.csv("data/daily_cases_weekly2.csv")
             .attr("font-size", "16")
             .attr("font-weight","bold")
 
-    //x axis label
+
         svg.append("text")
+            // .attr("class", "x labels")
             .attr("text-anchor", "middle")
             .attr("font-size","12")
             .attr("x", width/2)
             .attr("y", height+50)
             .text("week");
 
-        //ya axis label
+
         svg.append("text")
+            // .attr("class", "y labels")
             .attr("text-anchor", "middle")
             .attr("transform", "rotate(-90)")
             .attr("x", -width/3)
@@ -152,49 +155,10 @@ d3.csv("data/daily_cases_weekly2.csv")
             .call(d3.axisLeft(y));
 
 
-        //draw stacked rectangles
-        svg.append("g")
-            .selectAll("g")
-            .data(stackedData)
-            .join("g")
-            .attr("fill", d => color(d.key))
-            .selectAll("rect")
-            .data(d => d)
-            .join("rect")
-            .attr("x", d => x(d.data.group))
-            .attr("y", d => y(d[1]))
-            .attr("class", d => "date date-" + d.data.group)
-            .attr("height", d => y(d[0]) - y(d[1]))
-            .attr("width",x.bandwidth())
-            .attr("total", d=>d.total)
-            .on("mouseover", mouseover)
-            .on("mouseleave", mouseleave);
 
 
-        // // zero baseline bar chart - Europe
-        // svg.selectAll("mybar")
-        //     .data(stackedData[5])
-        //     .join("rect")
-        //     .attr("x", d => x(d.data.group))
-        //     .attr("y", d => y(d[1] - d[0]))
-        //     .attr("width", x.bandwidth())
-        //     .attr("height", d => y(0) - y(d[1] - d[0]))
-        //     .attr("fill", "#606e04");
-
-        //stacked bar chart
-        // stackedData.slice(0, 4).forEach((region, i) => {
-        //     svg.selectAll("mybar")
-        //         .data(region)
-        //         .join("rect")
-        //         .attr("x", d => x(d.data.group))
-        //         .attr("y", d => y(d[1]))
-        //         .attr("width", x.bandwidth())
-        //         .attr("height", d => y(d[0]) - y(d[1]))
-        //         .attr("fill", d => color(i));
-        // });
 
 
-    //legend rectangles
         const size = 10;
         let legendGroups = subgroups.slice().reverse();
         svg.selectAll("mylegend")
