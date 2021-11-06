@@ -26,8 +26,22 @@ body {
 
 .d3-tip {
     padding: 2px;
-    color: red;
     font-size: 11px;
+}
+
+.d3-tip2 {
+    padding: 2px;
+    font-size: 11px;
+}
+
+.d3-tip3 {
+    padding: 2px;
+    font-size: 11px;
+}
+
+.d3-tip5 {
+    padding: 2px;
+    font-size: 7px;
 }
 
 
@@ -42,6 +56,13 @@ body {
     stroke-opacity: 0.7;
     shape-rendering: crispEdges;
 }
+
+
+/*.grid_red {*/
+/*    stroke: red;*/
+/*    stroke-opacity: 1;*/
+/*    shape-rendering: crispEdges;*/
+/*}*/
 
 .grid path {
     stroke-width: 0;
@@ -59,3 +80,4 @@ body {
     margin-right: 2px;
     background-color: teal;
 }
+

@@ -452,9 +452,9 @@ function startTour() {
 
     setUpAnimations()
 
-    // tour.start();
+    tour.start();
     // goToStep('s5')
-    timeline.seek('end')
+    // timeline.seek('end')
 
 }
 
