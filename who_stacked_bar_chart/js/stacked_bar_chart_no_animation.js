@@ -109,22 +109,22 @@ class StackedChart {
 
 
         //draw stacked rectangles
-        // vis.svg.append("g")
-        //     .selectAll("g")
-        //     .data(vis.stackedData)
-        //     .join("g")
-        //     .attr("fill", d => vis.color(d.key))
-        //     .selectAll("rect")
-        //     .data(d => d)
-        //     .join("rect")
-        //     .attr("x", d => vis.x(d.data.group))
-        //     .attr("y", d => vis.y(d[1]))
-        //     .attr("class", d => "date date-" + d.data.group)
-        //     .attr("height", d => vis.y(d[0]) - vis.y(d[1]))
-        //     .attr("width", vis.x.bandwidth())
-        //     .attr("total", d => d.total)
-        //     .on("mouseover", function(e,d) {vis.Mouseover(this,e,d)})
-        //     .on("mouseout", function() {vis.Mouseleave(this)});
+        vis.svg.append("g")
+            .selectAll("g")
+            .data(vis.stackedData)
+            .join("g")
+            .attr("fill", d => vis.color(d.key))
+            .selectAll("rect")
+            .data(d => d)
+            .join("rect")
+            .attr("x", d => vis.x(d.data.group))
+            .attr("y", d => vis.y(d[1]))
+            .attr("class", d => "date date-" + d.data.group)
+            .attr("height", d => vis.y(d[0]) - vis.y(d[1]))
+            .attr("width", vis.x.bandwidth())
+            .attr("total", d => d.total)
+            .on("mouseover", function(e,d) {vis.Mouseover(this,e,d)})
+            .on("mouseout", function() {vis.Mouseleave(this)});
 
 
         // // zero baseline bar chart - Europe
@@ -156,17 +156,17 @@ class StackedChart {
         //     .attr("height", d => y(0) - y(d[1] - d[0]))
         //     .attr("fill", "#606e04");
 
-       // // stacked bar chart
-       //  stackedData.slice(0, 4).forEach((region, i) => {
-       //      vis.svg.selectAll("mybar")
-       //          .data(region)
-       //          .join("rect")
-       //          .attr("x", d => vis.x(d.data.group))
-       //          .attr("y", d => vis.y(d[1]))
-       //          .attr("width", vis.x.bandwidth())
-       //          .attr("height", d => y(d[0]) - y(d[1]))
-       //          .attr("fill", d => color(i));
-       //  });
+        // // stacked bar chart
+        //  stackedData.slice(0, 4).forEach((region, i) => {
+        //      vis.svg.selectAll("mybar")
+        //          .data(region)
+        //          .join("rect")
+        //          .attr("x", d => vis.x(d.data.group))
+        //          .attr("y", d => vis.y(d[1]))
+        //          .attr("width", vis.x.bandwidth())
+        //          .attr("height", d => y(d[0]) - y(d[1]))
+        //          .attr("fill", d => color(i));
+        //  });
 
 
         //legend rectangles
@@ -285,45 +285,45 @@ class StackedChart {
             .style("opacity", 1)
     }
 
-    UpdateVis() {
-        let vis = this;
-
-        //create index
-        let index = vis.currentIndex;
-
-        //if gone over the index length then stop
-        if (index > vis.stackedData.length) return false;
-
-        //select the previous rectangle and update the y axis
-        if (index > 0) {
-            vis.svg.selectAll(".rect-" + (index-1))
-                .transition().duration(1000)
-                .attr("y", d => vis.y(d[1]));
-
-        }
-
-        //create a zero baseline chart based on the region's index (max index=max number of regions)
-        if (index < vis.stackedData.length) {
-            let region = vis.stackedData[index];
-            vis.svg.selectAll("mybar")
-                .data(region)
-                .join("rect")
-                .transition().duration(1000)
-                .attr("class", "rect-" + index)
-                .attr("x", d => vis.x(d.data.group))
-                .attr("y", d => vis.y(d[1] - d[0]) - 300)
-                .attr("width", vis.x.bandwidth())
-                .attr("height", d => vis.y(d[0]) - vis.y(d[1]))
-                .attr("fill", d => vis.color(index));
-                // .on("mouseover", function(e,d) {vis.Mouseover(this,e,d)})
-                // .on("mouseout", function() {vis.Mouseleave(this)});
-
-
-        }
-
-        //increment by one
-        vis.currentIndex++;
-        //return true while regions still remain
-        return (vis.currentIndex <= vis.stackedData.length);
-    }
+    // UpdateVis() {
+    //     let vis = this;
+    //
+    //     //create index
+    //     let index = vis.currentIndex;
+    //
+    //     //if gone over the index length then stop
+    //     if (index > vis.stackedData.length) return false;
+    //
+    //     //select the previous rectangle and update the y axis
+    //     if (index > 0) {
+    //         vis.svg.selectAll(".rect-" + (index-1))
+    //             .transition().duration(1000)
+    //             .attr("y", d => vis.y(d[1]));
+    //
+    //     }
+    //
+    //     //create a zero baseline chart based on the region's index (max index=max number of regions)
+    //     if (index < vis.stackedData.length) {
+    //         let region = vis.stackedData[index];
+    //         vis.svg.selectAll("mybar")
+    //             .data(region)
+    //             .join("rect")
+    //             .transition().duration(1000)
+    //             .attr("class", "rect-" + index)
+    //             .attr("x", d => vis.x(d.data.group))
+    //             .attr("y", d => vis.y(d[1] - d[0]) - 300)
+    //             .attr("width", vis.x.bandwidth())
+    //             .attr("height", d => vis.y(d[0]) - vis.y(d[1]))
+    //             .attr("fill", d => vis.color(index))
+    //             .on("mouseover", function(e,d) {vis.Mouseover(this,e,d)})
+    //             .on("mouseout", function() {vis.Mouseleave(this)});
+    //
+    //
+    //     }
+    //
+    //     //increment by one
+    //     vis.currentIndex++;
+    //     //return true while regions still remain
+    //     return (vis.currentIndex <= vis.stackedData.length);
+    // }
 }
