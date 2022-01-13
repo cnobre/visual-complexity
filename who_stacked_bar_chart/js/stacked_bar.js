@@ -163,12 +163,8 @@ d3.csv("data/daily_cases_weekly2.csv")
             .join("rect")
             .attr("x", d => x(d.data.group))
             .attr("y", d => y(d[1]))
-<<<<<<< HEAD
-            .attr("height", d =>     y(d[0]) - y(d[1]))
-=======
             .attr("class", d => "date date-" + d.data.group)
             .attr("height", d => y(d[0]) - y(d[1]))
->>>>>>> d3826eed70bac7a521fafb672c738e0fa218bd32
             .attr("width",x.bandwidth())
             .attr("total", d=>d.total)
             .on("mouseover", mouseover)
