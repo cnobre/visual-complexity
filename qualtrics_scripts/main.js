@@ -1,7 +1,7 @@
-function interact(this){
+function interact(qObj){
 
     	
-	var inputId = 'QR~' + this.questionId;
+	var inputId = 'QR~' + qObj.questionId;
     console.log('inputId is', inputId)
 	
 	d3.xml("https://raw.githubusercontent.com/cnobre/visual-complexity/barbara/hotel_costs.svg")
