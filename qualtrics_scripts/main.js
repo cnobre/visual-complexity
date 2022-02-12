@@ -8,6 +8,7 @@ function interact(this){
 		.then((data) => {
     // do something with the data
 		
+        console.log('data', data)
         d3.select('#myImage').node().append(data.documentElement);
         
         d3.select('svg')
