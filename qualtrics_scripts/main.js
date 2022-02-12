@@ -1,26 +1,36 @@
-function interact(qObj){
-
-    	
+function stackedBar(qObj){    	
 	var inputId = 'QR~' + qObj.questionId;
     console.log('inputId is', inputId)
+
+    let question = d3.select('#' + inputId);
 	
 	d3.xml("https://raw.githubusercontent.com/cnobre/visual-complexity/barbara/hotel_costs.svg")
 		.then((data) => {
-    // do something with the data
-		
-        console.log('data', data)
-        d3.select('#myImage').node().append(data.documentElement);
+        // append the svg to the question div
+        question.node().append(data.documentElement);
         
-        d3.select('svg')
+        question.select('svg')
             .attr('width', '600px')
             .attr('height', '200px');
         
-        d3.select('#vodka_ny').on('click', function(){d3.select(this).style('fill', 'black')})
+        question.select('#vodka_ny').on('click', function(){d3.select(this).style('fill', 'black')})
   })
   .catch((error) => {
     console.error("Error loading the data", error);
-  });
+  });   
+}
 
-
-   
+function scatter(qObj){    	
+	var inputId = 'QR~' + qObj.questionId;
+  // console.log('inputId is', inputId)
+  let question = d3.select('#' + inputId);
+	
+	d3.xml("url to scatter.svg")
+		.then((data) => {
+    // append the svg to the question div
+    question.node().append(data.documentElement);
+  })
+  .catch((error) => {
+    console.error("Error loading the data", error);
+  });   
 }
