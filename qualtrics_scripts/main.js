@@ -1,5 +1,5 @@
 function stackedBar(qObj){    	
-	var inputId = 'QR~' + qObj.questionId;
+	var inputId = qObj.questionId;
     console.log('inputId is', inputId)
 
     let question = d3.select('#' + inputId);
@@ -21,7 +21,7 @@ function stackedBar(qObj){
 }
 
 function scatter(qObj){    	
-	var inputId = 'QR~' + qObj.questionId;
+	var inputId = qObj.questionId;
   // console.log('inputId is', inputId)
   let question = d3.select('#' + inputId);
 	
