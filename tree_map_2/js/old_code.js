@@ -6,7 +6,7 @@ const margin = {top: 120, right: 50, bottom: 50, left: 50},
 const padding = 30
 
 
-const svg = d3.select("#my_dataviz")
+const svg = d3.select("#treemap")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -23,7 +23,7 @@ d3.json("data/dataset.json").then( function(data) {
     console.log(root)
 
 
-    const tooltip = d3.select("#my_dataviz")
+    const tooltip = d3.select("#treemap")
         .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
@@ -53,13 +53,13 @@ d3.json("data/dataset.json").then( function(data) {
     }
 
 
-    var mousemove = function(event, d) {
-        tooltip
-            .html(`<strong>$${d.data.value} billion </strong> <br>${d.data.group}`)
-            .style("left", ((event.x) +10) + "px")
-            .style("top", ((event.y) +10) + "px")
-
-    }
+    // var mousemove = function(event, d) {
+    //     tooltip
+    //         .html(`<strong>$${d.data.value} billion </strong> <br>${d.data.group}`)
+    //         .style("left", ((event.x) +10) + "px")
+    //         .style("top", ((event.y) +10) + "px")
+    //
+    // }
 
 
     const mouseover_business = function(event, d) {
@@ -245,7 +245,7 @@ d3.json("data/dataset.json").then( function(data) {
         .style("fill", function(d){ return color(d.parent.data.name)} )
         // .style("opacity", function(d){ return opacity(d.data.value)})
         .on("mouseover", mouseover)
-        .on("mousemove", mousemove)
+        // .on("mousemove", mousemove)
         .on("mouseleave", mouseleave);
 
 
@@ -495,7 +495,7 @@ d3.json("data/dataset.json").then( function(data) {
 
 
 
-
+    //
     svg
         .selectAll("text-business")
         .data(root.leaves()[0])
