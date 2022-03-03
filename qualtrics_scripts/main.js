@@ -4,7 +4,7 @@ function stackedBar(qObj){
 
     let question = d3.select('#' + inputId);
 	
-	d3.xml("https://raw.githubusercontent.com/cnobre/visual-complexity/barbara/stackedBar.svg")
+	d3.xml("https://raw.githubusercontent.com/cnobre/visual-complexity/barbara/stackedBar_2.svg")
 		.then((data) => {
 
       //append a canvas to the question div
