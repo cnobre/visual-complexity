@@ -8,7 +8,7 @@ function stackedBar(qObj){
 		.then((data) => {
 
       //append a canvas to the question div
-      let canvasDiv = question.node().append('canvas'); 
+      let canvasDiv = question.append('canvas'); 
       
       canvasDiv.attr('id', 'sheet')
       .attr('class', 'overlay')
