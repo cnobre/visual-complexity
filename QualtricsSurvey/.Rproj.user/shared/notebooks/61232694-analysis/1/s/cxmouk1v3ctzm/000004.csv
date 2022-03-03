@@ -1,0 +1,8 @@
+"0",""
+"0","df %>% "
+"0","  filter(measure==""accuracy"") %>% "
+"0","  mutate( value = as.numeric( as.character(value)) ) %>% "
+"0","  ggplot( aes(value) ) +"
+"0","    geom_density( alpha = 0.2 ) +"
+"0","    facet_grid(task ~ condition)"
+"0",""

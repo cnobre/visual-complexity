@@ -1,0 +1,6 @@
+"0","df %>% "
+"0","  filter(measure==""selection"" & task=='K2') %>% "
+"0"," ggplot( aes(x=value)) + "
+"0","  geom_histogram(stat=""count"")+"
+"0","    facet_grid(condition ~ . )"
+"2","Ignoring unknown parameters: binwidth, bins, pad"

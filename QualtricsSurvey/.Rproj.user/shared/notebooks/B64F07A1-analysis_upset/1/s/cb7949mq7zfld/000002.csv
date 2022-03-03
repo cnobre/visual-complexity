@@ -1,0 +1,8 @@
+"0",""
+"0","df_acc <- df %>% "
+"0","  filter(measure==""accuracy"") "
+"0",""
+"0",""
+"0","df_acc$value = as.numeric( as.character(df_acc$value ))"
+"0",""
+"0",""

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1630776989239.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3881982067",
+    "id" : "303F9EDE",
+    "lastKnownWriteTime" : 1631633408,
+    "last_content_update" : 1631633417923,
+    "path" : "~/Google Drive (cnobre@g.harvard.edu)/ProtoGraph/User Study/analysis.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "93,6",
+        "last_setup_crc32" : "",
+        "scrollLine" : "91"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
