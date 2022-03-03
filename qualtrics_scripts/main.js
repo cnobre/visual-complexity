@@ -17,9 +17,9 @@ function stackedBar(qObj){
 
 
         // append the svg to the question div
-        let svg = question.node().append(data.documentElement);
+        question.node().append(data.documentElement);
         
-        svg.select('svg')
+        let svg = question.select('svg')
             .attr('width', '600px')
             .attr('height', '200px');
 
