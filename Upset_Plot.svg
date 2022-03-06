@@ -1,0 +1,853 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2008" height="719" viewBox="0 0 2008 719">
+  <g id="Group_1" data-name="Group 1" transform="translate(-20 -284)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="16.5" cy="16.5" r="16.5" transform="translate(283 751)" fill="#fff"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="16.5" cy="16.5" r="16.5" transform="translate(283 794)" fill="#fff"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="16.5" cy="16.5" r="16.5" transform="translate(283 837)" fill="#fff"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="16.5" cy="16.5" r="16.5" transform="translate(283 880)" fill="#fff"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="16.5" cy="16.5" r="16.5" transform="translate(283 923)" fill="#fff"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="16.5" cy="16.5" r="16.5" transform="translate(283 966)" fill="#fff"/>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(300 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(300 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(300 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(300 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(300 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(300 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(340 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(340 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(340 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(340 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_17" data-name="Ellipse 17" transform="translate(340 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(340 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_19" data-name="Ellipse 19" transform="translate(380 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(380 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(380 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_22" data-name="Ellipse 22" transform="translate(380 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_23" data-name="Ellipse 23" transform="translate(380 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(380 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(420 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_26" data-name="Ellipse 26" transform="translate(420 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(420 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_28" data-name="Ellipse 28" transform="translate(420 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_29" data-name="Ellipse 29" transform="translate(420 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(420 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_31" data-name="Ellipse 31" transform="translate(460 755)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_32" data-name="Ellipse 32" transform="translate(460 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_33" data-name="Ellipse 33" transform="translate(460 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_34" data-name="Ellipse 34" transform="translate(460 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_35" data-name="Ellipse 35" transform="translate(460 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_36" data-name="Ellipse 36" transform="translate(460 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_37" data-name="Ellipse 37" transform="translate(500 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_38" data-name="Ellipse 38" transform="translate(500 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_39" data-name="Ellipse 39" transform="translate(500 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_40" data-name="Ellipse 40" transform="translate(500 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_41" data-name="Ellipse 41" transform="translate(500 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_42" data-name="Ellipse 42" transform="translate(500 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_43" data-name="Ellipse 43" transform="translate(540 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_44" data-name="Ellipse 44" transform="translate(540 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_45" data-name="Ellipse 45" transform="translate(540 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_46" data-name="Ellipse 46" transform="translate(540 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_47" data-name="Ellipse 47" transform="translate(540 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_48" data-name="Ellipse 48" transform="translate(540 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_49" data-name="Ellipse 49" transform="translate(580 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_50" data-name="Ellipse 50" transform="translate(580 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_51" data-name="Ellipse 51" transform="translate(580 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_52" data-name="Ellipse 52" transform="translate(580 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_53" data-name="Ellipse 53" transform="translate(580 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_54" data-name="Ellipse 54" transform="translate(580 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_55" data-name="Ellipse 55" transform="translate(620 755)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_56" data-name="Ellipse 56" transform="translate(620 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_57" data-name="Ellipse 57" transform="translate(620 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_58" data-name="Ellipse 58" transform="translate(620 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_59" data-name="Ellipse 59" transform="translate(620 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_60" data-name="Ellipse 60" transform="translate(620 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_61" data-name="Ellipse 61" transform="translate(660 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_62" data-name="Ellipse 62" transform="translate(660 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_63" data-name="Ellipse 63" transform="translate(660 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_64" data-name="Ellipse 64" transform="translate(660 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_65" data-name="Ellipse 65" transform="translate(660 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_66" data-name="Ellipse 66" transform="translate(660 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_67" data-name="Ellipse 67" transform="translate(700 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_68" data-name="Ellipse 68" transform="translate(700 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_69" data-name="Ellipse 69" transform="translate(700 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_70" data-name="Ellipse 70" transform="translate(700 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_71" data-name="Ellipse 71" transform="translate(700 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_72" data-name="Ellipse 72" transform="translate(700 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_73" data-name="Ellipse 73" transform="translate(740 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_74" data-name="Ellipse 74" transform="translate(740 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_75" data-name="Ellipse 75" transform="translate(740 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_76" data-name="Ellipse 76" transform="translate(740 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_77" data-name="Ellipse 77" transform="translate(740 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_78" data-name="Ellipse 78" transform="translate(740 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_79" data-name="Ellipse 79" transform="translate(780 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_80" data-name="Ellipse 80" transform="translate(780 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_81" data-name="Ellipse 81" transform="translate(780 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_82" data-name="Ellipse 82" transform="translate(780 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_83" data-name="Ellipse 83" transform="translate(780 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_84" data-name="Ellipse 84" transform="translate(780 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_85" data-name="Ellipse 85" transform="translate(820 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_86" data-name="Ellipse 86" transform="translate(820 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_87" data-name="Ellipse 87" transform="translate(820 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_88" data-name="Ellipse 88" transform="translate(820 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_89" data-name="Ellipse 89" transform="translate(820 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_90" data-name="Ellipse 90" transform="translate(820 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_91" data-name="Ellipse 91" transform="translate(860 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_92" data-name="Ellipse 92" transform="translate(860 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_93" data-name="Ellipse 93" transform="translate(860 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_94" data-name="Ellipse 94" transform="translate(860 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_95" data-name="Ellipse 95" transform="translate(860 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_96" data-name="Ellipse 96" transform="translate(860 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_97" data-name="Ellipse 97" transform="translate(900 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_98" data-name="Ellipse 98" transform="translate(900 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_99" data-name="Ellipse 99" transform="translate(900 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_100" data-name="Ellipse 100" transform="translate(900 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_101" data-name="Ellipse 101" transform="translate(900 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_102" data-name="Ellipse 102" transform="translate(900 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_103" data-name="Ellipse 103" transform="translate(940 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_104" data-name="Ellipse 104" transform="translate(940 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_105" data-name="Ellipse 105" transform="translate(940 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_106" data-name="Ellipse 106" transform="translate(940 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_107" data-name="Ellipse 107" transform="translate(940 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_108" data-name="Ellipse 108" transform="translate(940 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_109" data-name="Ellipse 109" transform="translate(980 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_110" data-name="Ellipse 110" transform="translate(980 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_111" data-name="Ellipse 111" transform="translate(980 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_112" data-name="Ellipse 112" transform="translate(980 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_113" data-name="Ellipse 113" transform="translate(980 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_114" data-name="Ellipse 114" transform="translate(980 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_115" data-name="Ellipse 115" transform="translate(1132 755)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_116" data-name="Ellipse 116" transform="translate(1132 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_117" data-name="Ellipse 117" transform="translate(1132 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_118" data-name="Ellipse 118" transform="translate(1132 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_119" data-name="Ellipse 119" transform="translate(1132 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_120" data-name="Ellipse 120" transform="translate(1132 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_121" data-name="Ellipse 121" transform="translate(1172 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_122" data-name="Ellipse 122" transform="translate(1172 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_123" data-name="Ellipse 123" transform="translate(1172 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_124" data-name="Ellipse 124" transform="translate(1172 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_125" data-name="Ellipse 125" transform="translate(1172 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_126" data-name="Ellipse 126" transform="translate(1172 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_127" data-name="Ellipse 127" transform="translate(1212 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_128" data-name="Ellipse 128" transform="translate(1212 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_129" data-name="Ellipse 129" transform="translate(1212 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_130" data-name="Ellipse 130" transform="translate(1212 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_131" data-name="Ellipse 131" transform="translate(1212 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_132" data-name="Ellipse 132" transform="translate(1212 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_133" data-name="Ellipse 133" transform="translate(1252 755)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_134" data-name="Ellipse 134" transform="translate(1252 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_135" data-name="Ellipse 135" transform="translate(1252 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_136" data-name="Ellipse 136" transform="translate(1252 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_137" data-name="Ellipse 137" transform="translate(1252 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_138" data-name="Ellipse 138" transform="translate(1252 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_139" data-name="Ellipse 139" transform="translate(1292 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_140" data-name="Ellipse 140" transform="translate(1292 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_141" data-name="Ellipse 141" transform="translate(1292 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_142" data-name="Ellipse 142" transform="translate(1292 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_143" data-name="Ellipse 143" transform="translate(1292 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_144" data-name="Ellipse 144" transform="translate(1292 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_145" data-name="Ellipse 145" transform="translate(1332 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_146" data-name="Ellipse 146" transform="translate(1332 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_147" data-name="Ellipse 147" transform="translate(1332 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_148" data-name="Ellipse 148" transform="translate(1332 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_149" data-name="Ellipse 149" transform="translate(1332 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_150" data-name="Ellipse 150" transform="translate(1332 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_151" data-name="Ellipse 151" transform="translate(1372 755)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_152" data-name="Ellipse 152" transform="translate(1372 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_153" data-name="Ellipse 153" transform="translate(1372 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_154" data-name="Ellipse 154" transform="translate(1372 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_155" data-name="Ellipse 155" transform="translate(1372 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_156" data-name="Ellipse 156" transform="translate(1372 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_157" data-name="Ellipse 157" transform="translate(1412 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_158" data-name="Ellipse 158" transform="translate(1412 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_159" data-name="Ellipse 159" transform="translate(1412 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_160" data-name="Ellipse 160" transform="translate(1412 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_161" data-name="Ellipse 161" transform="translate(1412 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_162" data-name="Ellipse 162" transform="translate(1412 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_163" data-name="Ellipse 163" transform="translate(1452 755)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_164" data-name="Ellipse 164" transform="translate(1452 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_165" data-name="Ellipse 165" transform="translate(1452 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_166" data-name="Ellipse 166" transform="translate(1452 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_167" data-name="Ellipse 167" transform="translate(1452 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_168" data-name="Ellipse 168" transform="translate(1452 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_169" data-name="Ellipse 169" transform="translate(1492 755)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_170" data-name="Ellipse 170" transform="translate(1492 798)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_171" data-name="Ellipse 171" transform="translate(1492 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_172" data-name="Ellipse 172" transform="translate(1492 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_173" data-name="Ellipse 173" transform="translate(1492 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_174" data-name="Ellipse 174" transform="translate(1492 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_175" data-name="Ellipse 175" transform="translate(1094 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_176" data-name="Ellipse 176" transform="translate(1094 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_177" data-name="Ellipse 177" transform="translate(1094 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_178" data-name="Ellipse 178" transform="translate(1094 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_179" data-name="Ellipse 179" transform="translate(1094 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_180" data-name="Ellipse 180" transform="translate(1094 970)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_181" data-name="Ellipse 181" transform="translate(1056 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_182" data-name="Ellipse 182" transform="translate(1056 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_183" data-name="Ellipse 183" transform="translate(1056 841)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_184" data-name="Ellipse 184" transform="translate(1056 884)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_185" data-name="Ellipse 185" transform="translate(1056 927)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_186" data-name="Ellipse 186" transform="translate(1056 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_187" data-name="Ellipse 187" transform="translate(1018 755)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_188" data-name="Ellipse 188" transform="translate(1018 798)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_189" data-name="Ellipse 189" transform="translate(1018 841)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_190" data-name="Ellipse 190" transform="translate(1018 884)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_191" data-name="Ellipse 191" transform="translate(1018 927)" fill="#fff" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <g id="Ellipse_192" data-name="Ellipse 192" transform="translate(1018 970)" fill="#5377a7" stroke="#5377a7" stroke-width="1">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+    </g>
+    <text id="Fatique" transform="translate(66 760)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">Fatique</tspan></text>
+    <text id="Anosmia" transform="translate(66 798)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">Anosmia</tspan></text>
+    <text id="Cough" transform="translate(65 837)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">Cough</tspan></text>
+    <text id="Fever" transform="translate(64 878)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">Fever</tspan></text>
+    <text id="Diarrhea" transform="translate(62 921)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">Diarrhea</tspan></text>
+    <text id="Shortness_of_Breath" data-name="Shortness of Breath" transform="translate(63 964)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">Shortness of Breath</tspan></text>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="29" height="202" transform="translate(304 543)" fill="#cfcdcd"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="29" height="142" transform="translate(383 603)" fill="#cfcdcd"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="29" height="179" transform="translate(343 566)" fill="#cfcdcd"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="29" height="130" transform="translate(423 615)" fill="#cfcdcd"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="29" height="101" transform="translate(460 644)" fill="#cfcdcd"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="29" height="51" transform="translate(500 694)" fill="#cfcdcd"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="29" height="51" transform="translate(540 694)" fill="#cfcdcd"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="29" height="42" transform="translate(579 703)" fill="#cfcdcd"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="29" height="42" transform="translate(616 703)" fill="#cfcdcd"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="33" height="37" transform="translate(654 708)" fill="#cfcdcd"/>
+    <rect id="Rectangle_12" data-name="Rectangle 12" width="25" height="30" transform="translate(702 708)" fill="#cfcdcd" opacity="0"/>
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="25" height="30" transform="translate(747 708)" fill="#cfcdcd" opacity="0"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="29" height="28" transform="translate(696 716)" fill="#cfcdcd"/>
+    <rect id="Rectangle_15" data-name="Rectangle 15" width="29" height="17" transform="translate(737 727)" fill="#cfcdcd"/>
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="29" height="17" transform="translate(780 729)" fill="#cfcdcd"/>
+    <rect id="Rectangle_17" data-name="Rectangle 17" width="29" height="15" transform="translate(823 731)" fill="#cfcdcd"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="29" height="15" transform="translate(865 731)" fill="#cfcdcd"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" width="29" height="13" transform="translate(905 732)" fill="#cfcdcd"/>
+    <rect id="Rectangle_20" data-name="Rectangle 20" width="29" height="10" transform="translate(942 735)" fill="#cfcdcd"/>
+    <rect id="Rectangle_21" data-name="Rectangle 21" width="29" height="9" transform="translate(982 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" width="29" height="9" transform="translate(1020 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="29" height="9" transform="translate(1059 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="29" height="9" transform="translate(1098 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_25" data-name="Rectangle 25" width="29" height="9" transform="translate(1137 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" width="29" height="9" transform="translate(1176 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_27" data-name="Rectangle 27" width="29" height="9" transform="translate(1215 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" width="29" height="9" transform="translate(1254 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="29" height="8" transform="translate(1293 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_30" data-name="Rectangle 30" width="29" height="7" transform="translate(1332 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_31" data-name="Rectangle 31" width="29" height="6" transform="translate(1371 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_32" data-name="Rectangle 32" width="29" height="6" transform="translate(1410 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_33" data-name="Rectangle 33" width="29" height="6" transform="translate(1449 736)" fill="#cfcdcd"/>
+    <rect id="Rectangle_34" data-name="Rectangle 34" width="29" height="6" transform="translate(1488 736)" fill="#cfcdcd"/>
+    <path id="Path_1" data-name="Path 1" d="M0,0V43" transform="translate(316 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_2" data-name="Path 2" d="M0,0V90" transform="translate(356 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_3" data-name="Path 3" d="M0,0V90" transform="translate(436 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_4" data-name="Path 4" d="M0,0V172.5" transform="translate(517 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_5" data-name="Path 5" d="M0,0V172.5" transform="translate(557 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_6" data-name="Path 6" d="M0,0V47" transform="translate(597 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_7" data-name="Path 7" d="M0,0V172.5" transform="translate(677 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_8" data-name="Path 8" d="M0,0V172.5" transform="translate(715 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_9" data-name="Path 9" d="M0,0V133" transform="translate(756 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_10" data-name="Path 10" d="M0,0V133" transform="translate(793 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_11" data-name="Path 11" d="M0,0V133" transform="translate(834 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_12" data-name="Path 12" d="M0,0V176" transform="translate(875 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_13" data-name="Path 13" d="M0,0V219" transform="translate(914 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_14" data-name="Path 14" d="M0,0V219" transform="translate(957 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_15" data-name="Path 15" d="M0,0V219" transform="translate(996 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_16" data-name="Path 16" d="M0,0V219" transform="translate(1033 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_17" data-name="Path 17" d="M0,0V219" transform="translate(1073 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_18" data-name="Path 18" d="M0,0V188.5" transform="translate(1108 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_19" data-name="Path 19" d="M0,0V188.5" transform="translate(1189 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_20" data-name="Path 20" d="M0,0V215" transform="translate(1228 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_21" data-name="Path 21" d="M0,0V215" transform="translate(1349 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_22" data-name="Path 22" d="M0,0V45" transform="translate(1387 855.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_23" data-name="Path 23" d="M0,0V219" transform="translate(1428 767.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <path id="Path_24" data-name="Path 24" d="M0,0V129" transform="translate(1509 857.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+    <rect id="Rectangle_35" data-name="Rectangle 35" width="193" height="32" transform="translate(1546 756)" fill="#cfcdcd"/>
+    <rect id="Rectangle_36" data-name="Rectangle 36" width="135" height="32" transform="translate(1546 798)" fill="#cfcdcd"/>
+    <rect id="Rectangle_37" data-name="Rectangle 37" width="112" height="32" transform="translate(1546 840)" fill="#cfcdcd"/>
+    <rect id="Rectangle_38" data-name="Rectangle 38" width="35" height="32" transform="translate(1546 884)" fill="#cfcdcd"/>
+    <rect id="Rectangle_39" data-name="Rectangle 39" width="34" height="32" transform="translate(1546 927)" fill="#cfcdcd"/>
+    <rect id="Rectangle_40" data-name="Rectangle 40" width="18" height="32" transform="translate(1546 968)" fill="#cfcdcd"/>
+    <text id="Which_symptoms_do_COVID_patients_have_The_users_of_the_COVID_Symptoms_tracker_reported_their_symptoms._The_infographic_shows_the_frequency_of_each_symptom_and_combination_of_symptoms." data-name="Which symptoms do COVID patients have?
+The users of the COVID Symptoms tracker reported their symptoms.
+The infographic shows the frequency of each symptom and combination of symptoms." transform="translate(304 284)" fill="#5377a7" font-size="50" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="54">Which symptoms do COVID patients have?</tspan><tspan fill="#a8abae" font-size="30"><tspan x="0" y="99">The users of the COVID Symptoms tracker reported their symptoms.</tspan><tspan x="0" y="139">The infographic shows the frequency of each symptom and combination of symptoms.</tspan></tspan></text>
+    <text id="_8_" data-name="8%" transform="translate(1580 971)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">8%</tspan></text>
+    <text id="_19_" data-name="19%" transform="translate(1594 927)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">19%</tspan></text>
+    <text id="_20_" data-name="20%" transform="translate(1595 884)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">20%</tspan></text>
+    <text id="_51_" data-name="51%" transform="translate(1671 838)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">51%</tspan></text>
+    <text id="_62_" data-name="62%" transform="translate(1690 798)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">62%</tspan></text>
+    <text id="_88_" data-name="88%" transform="translate(1751 759)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">88%</tspan></text>
+    <text id="_88_reported_fatigue_as_one_of_the_symptom" data-name="88% reported fatigue as one of the symptom" transform="translate(1540 583)" fill="#a8abae" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="22">88% reported fatigue as one </tspan><tspan x="0" y="49">of the symptom</tspan></text>
+    <line id="Line_1" data-name="Line 1" y2="75" transform="translate(1658.5 655.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(1666 737) rotate(180)" fill="#cfcdcd">
+      <path d="M 15.23061370849609 17.5 L 0.7693850994110107 17.5 L 7.999999523162842 1.231117486953735 L 15.23061370849609 17.5 Z" stroke="none"/>
+      <path d="M 7.999999523162842 2.462212562561035 L 1.538760185241699 17 L 14.46123886108398 17 L 7.999999523162842 2.462212562561035 M 7.999999523162842 0 L 16 18 L -9.5367431640625e-07 18 L 7.999999523162842 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <text id="_16.2_" data-name="16.2%" transform="translate(292 505)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">16.2%</tspan></text>
+    <text id="_0.1_" data-name="0.1%" transform="translate(1483 691)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">0.1%</tspan></text>
+    <text id="_16.2_reported_a_combination_of_fatigue_and_anosmia_as_symptoms" data-name="16.2% reported a
+combination of
+fatigue and anosmia
+as symptoms" transform="translate(20 543)" fill="#a8abae" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="22">16.2% reported a</tspan><tspan x="0" y="49">combination of</tspan><tspan x="0" y="76">fatigue and anosmia</tspan><tspan x="0" y="103">as symptoms</tspan></text>
+    <line id="Line_2" data-name="Line 2" y2="75" transform="translate(1658.5 655.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Polygon_3" data-name="Polygon 3" transform="translate(1666 737) rotate(180)" fill="#cfcdcd">
+      <path d="M 15.23061370849609 17.5 L 0.7693850994110107 17.5 L 7.999999523162842 1.231117486953735 L 15.23061370849609 17.5 Z" stroke="none"/>
+      <path d="M 7.999999523162842 2.462212562561035 L 1.538760185241699 17 L 14.46123886108398 17 L 7.999999523162842 2.462212562561035 M 7.999999523162842 0 L 16 18 L -9.5367431640625e-07 18 L 7.999999523162842 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <text id="_0.1_2" data-name="0.1%" transform="translate(1483 691)" fill="#a8abae" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="26">0.1%</tspan></text>
+    <line id="Line_4" data-name="Line 4" y1="1" x2="44" transform="translate(237.5 595.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Polygon_5" data-name="Polygon 5" d="M10.5,0,21,16H0Z" transform="translate(294 586) rotate(90)" fill="#cfcdcd"/>
+    <path id="Path_25" data-name="Path 25" d="M0,0V43" transform="translate(637 857.5)" fill="none" stroke="#5377a7" stroke-width="5"/>
+  </g>
+</svg>
